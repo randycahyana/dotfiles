@@ -1,3 +1,9 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+
+""""""""""""""""""""""""""""""""""""""""""""""""'
+" UI configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""
+set tw=80
+set nu
