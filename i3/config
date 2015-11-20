@@ -115,48 +115,27 @@ client.unfocused        #555555 #555555 #FFFFFF
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        tray_output eDP
-        status_command i3status
-		font pango: Share Tech 9
-        position top
-        workspace_buttons no
-		colors {
-			background #333333
-			statusline #9E9E9E
-			separator #666666
-
-			# workspace:       border: bg:     text:
-			focused_workspace  #453452 #453452 #CCCCCC
-			focused_workspace  #285577 #333333 #CCCCCC
-			active_workspace   #FFFFFF #FFFFFF #555555
-			inactive_workspace #5555555 #5555555 #FFFFFF
-			urgent_workspace   #662B32 #58252B #F4BF75
-		}
-}
-
-# i3bar options:
-bar {
-	mode hide
+    position top 
+    mode hide
     modifier Mod1
-    position bottom
-    font pango: Share Tech 10
-    separator_symbol ":"
-    strip_workspace_numbers yes
+    tray_output eDP
+    status_command i3status
+	font pango: Share Tech 9
+	colors {
+		background #333333
+		statusline #9E9E9E
+		separator #666666
 
-    # bar colors:
-    colors {
-        background #333333
-
-        # workspace:       border: bg:     text:
-        focused_workspace  #453452 #453452 #CCCCCC
-        focused_workspace  #285577 #FFFFFF #333333
-        active_workspace   #FFFFFF #FFFFFF #333333
-        inactive_workspace #333333 #333333 #FFFFFF
-        urgent_workspace   #662B32 #E43A45 #F4BF75
-    }
+		# workspace:       border: bg:     text:
+		focused_workspace  #453452 #453452 #CCCCCC
+		focused_workspace  #285577 #333333 #CCCCCC
+		active_workspace   #FFFFFF #FFFFFF #555555
+		inactive_workspace #5555555 #5555555 #FFFFFF
+		urgent_workspace   #662B32 #58252B #F4BF75
+	}
 }
 
 # Audio Control
-bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '5%+'"
-bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '5%-'"
-bindsym XF86AudioMute exec "amixer -D pulse set Master toggle"
+bindsym XF86AudioRaiseVolume exec "amixer -q set Master '5%+' unmute"
+bindsym XF86AudioLowerVolume exec "amixer -q set Master '5%-' unmute"
+bindsym XF86AudioMute exec "amixer -q set Master toggle"

@@ -4,4 +4,4 @@
 - ln -s ~/dotfiles/vim ~/.vim
 - ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 - ln -s ~/dotfiles/i3 ~/.i3
-- Compile YCM with --gocode-completer option
+./install --clang-completer --system-libclang --gocode-completer
