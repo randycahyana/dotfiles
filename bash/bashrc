@@ -1,0 +1,43 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+
+set_prompt () {
+    Last_Command=$? # Must come first!
+    Grey=$(tput bold)$(tput setaf 243)
+    White=$(tput setaf 250)
+    Blue=$(tput bold)$(tput setaf 31)
+    Green=$(tput bold)$(tput setaf 10)
+    Bright=$(tput bold)$(tput setaf 254)
+    Orange=$(tput setaf 202)
+    Red=$(tput bold)$(tput setaf 160)
+    Reset=$(tput sgr0)
+    Cursor='➜'
+    Checkmark='\342\234\223'
+    Xmark='\342\234\227'
+
+    PS1=""
+
+    PS1+="$Grey[$Reset$White\A$Reset$Grey]$Reset"
+
+    PS1+="$Grey[$Reset$Blue\u@\h$Reset$Grey]$Reset"
+
+    if [[ $Last_Command == 0 ]]; then
+        PS1+=" $Green$Checkmark "
+    else
+        PS1+=" $Red$Xmark"
+    fi
+
+    PS1+="\\n"
+
+    PS1+="$Bright\\W "
+
+    PS1+="$Orange$Cursor $Reset"
+}
+PROMPT_COMMAND='set_prompt'

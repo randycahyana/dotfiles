@@ -139,3 +139,6 @@ bar {
 bindsym XF86AudioRaiseVolume exec "amixer -q set Master '5%+' unmute"
 bindsym XF86AudioLowerVolume exec "amixer -q set Master '5%-' unmute"
 bindsym XF86AudioMute exec "amixer -q set Master toggle"
+
+bindsym Mod1+p exec --no-startup-id chromium --show-app-list
+for_window [instance="chrome_app_list" window_role="bubble"] floating enable

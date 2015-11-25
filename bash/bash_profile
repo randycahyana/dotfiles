@@ -1,0 +1,24 @@
+#
+# ~/.bash_profile
+#
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# Start X server
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+
+# Register dotfiles
+dotfiles=(
+    aliases
+)
+
+# Load dotfiles 
+for file in "$HOME/.${dotfiles[@]}"; do
+    source $file
+    #[ -r "$file" ] && source "$file"
+done
+
+# History file config
+HISTSIZE=1000
+HISTFILESIZE=2000
+
