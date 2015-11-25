@@ -12,7 +12,7 @@ set_prompt () {
     Last_Command=$? # Must come first!
     Grey=$(tput bold)$(tput setaf 243)
     White=$(tput setaf 250)
-    Blue=$(tput bold)$(tput setaf 31)
+    Blue=$(tput setaf 31)
     Green=$(tput bold)$(tput setaf 10)
     Bright=$(tput bold)$(tput setaf 254)
     Orange=$(tput setaf 202)

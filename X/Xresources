@@ -2,15 +2,13 @@ URxvt.loginShell: true
 URxvt.geometry: 80x50
 URxvt.saveLines: 10000
 URxvt.cutchars: "`\"'&()*,:;<=>?[\\]^{|}$"
-urxvt.font: xft:terminus:size=11
-urxvt.boldFont: xft:terminus:size=12:weight=bold
+urxvt.font: xft:terminus:size=12
 URxvt.colorBD: rgb:fc/fc/fc
 URxvt.scrollBar: false
 URxvt.visualBell: true
 URxvt.fading: 10
 
 ! Color Scheme 
-! [Baskerville - Eldorado dark]
 *background:  #292929
 *foreground:  #A2A2A2
 *color0:  #2E3436
