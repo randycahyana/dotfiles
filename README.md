@@ -1,6 +1,8 @@
 - clone this repository along with the submodules
+- install terminal font
 - ln -s ~/dotfiles/bash/bashrc ~/.bashrc
 - ln -s ~/dotfiles/bash/bash_profile ~/.bash_profile
+- ln -s ~/dotfiles/bash/aliases ~/.aliases
 - ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
 - ln -s ~/dotfiles/vim ~/.vim
 - ln -s ~/dotfiles/vim/vimrc ~/.vimrc
