@@ -5,8 +5,9 @@ export EDITOR="vim"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
-# Path
-export PATH="$PATH:$HOME/bin:/usr/local/go/bin:/usr/local/rkt";
-
 # Go
 export GOPATH="/ranch/playground"
+
+# Path
+export PATH="$PATH:$HOME/bin:/usr/local/go/bin:$GOPATH/bin:/usr/local/rkt";
+
