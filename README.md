@@ -3,6 +3,8 @@
 - ln -s ~/dotfiles/bash/bashrc ~/.bashrc
 - ln -s ~/dotfiles/bash/bash_profile ~/.bash_profile
 - ln -s ~/dotfiles/bash/aliases ~/.aliases
+- ln -s ~/dotfiles/bash/exports ~/.exports
+- ln -s ~/dotfiles/bash/bash_prompt ~/.bash_prompt
 - ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
 - ln -s ~/dotfiles/vim ~/.vim
 - ln -s ~/dotfiles/vim/vimrc ~/.vimrc

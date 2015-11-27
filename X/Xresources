@@ -6,10 +6,10 @@ urxvt.font: xft:terminus:size=12
 URxvt.colorBD: rgb:fc/fc/fc
 URxvt.scrollBar: false
 URxvt.visualBell: true
-URxvt.fading: 10
+URxvt.fading: 20
 
 ! Color Scheme 
-*background:  #292929
+*background:  #002B36
 *foreground:  #A2A2A2
 *color0:  #2E3436
 *color1:  #a40000
