@@ -1,5 +1,5 @@
 - clone this repository along with the submodules
-- install terminal font
+- install terminus font
 - ln -s ~/dotfiles/bash/bashrc ~/.bashrc
 - ln -s ~/dotfiles/bash/bash_profile ~/.bash_profile
 - ln -s ~/dotfiles/bash/aliases ~/.aliases
