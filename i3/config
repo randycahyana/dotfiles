@@ -97,12 +97,13 @@ bindsym Mod1+Shift+8 move container to workspace 8
 bindsym Mod1+Shift+9 move container to workspace 9
 bindsym Mod1+Shift+0 move container to workspace 10
 
+# move to urgent window
+bindsym Mod1+x [urgent=latest] focus
+
 # reload the configuration file
 bindsym Mod1+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym Mod1+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 bindsym Mod1+r mode "resize"
 
@@ -140,5 +141,25 @@ bindsym XF86AudioRaiseVolume exec "amixer -q set Master '5%+' unmute"
 bindsym XF86AudioLowerVolume exec "amixer -q set Master '5%-' unmute"
 bindsym XF86AudioMute exec "amixer -q set Master toggle"
 
+# Chrome apps
 bindsym Mod1+p exec --no-startup-id chromium --show-app-list
 for_window [instance="chrome_app_list" window_role="bubble"] floating enable
+
+
+set $Locker i3lock && sleep 1
+
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id $Locker, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym Mod1+Shift+e mode "$mode_system"
