@@ -117,8 +117,6 @@ client.unfocused        #555555 #555555 #FFFFFF
 # finds out, if available)
 bar {
     position top 
-    mode hide
-    modifier Mod1
     tray_output eDP
     status_command i3status
 	font pango: Share Tech 9
