@@ -11,7 +11,6 @@ alias subl="subl3"
 alias l="ls -la"
 alias hosts="sudo $EDITOR /etc/hosts"
 alias dot="cd $HOME/dotfiles"
-alias ranch="cd /ranch"
 
 # Override commands
 alias rm="rm -i"
