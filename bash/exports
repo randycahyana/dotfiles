@@ -1,12 +1,15 @@
 # Editor
 export EDITOR="vim"
 
+# PATH
+export RANCH="/ranch"
+
 # Locale
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 # Go
-export GOPATH="/ranch/playground/go"
+export GOPATH="$RANCH/playground/go"
 
 # Path
 export PATH="$PATH:$HOME/bin:/usr/local/go/bin:$GOPATH/bin:/usr/local/rkt";
