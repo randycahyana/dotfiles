@@ -1,109 +1,106 @@
-# Modifider keys
-set $mod Mod1
+#==================================================================
+# Modifier keys
+#==================================================================
 
+set $mod Mod1
+floating_modifier $mod
+
+#==================================================================
 # Movement keys
+#==================================================================
+
 set $up l
 set $down k
 set $left j
 set $right semicolon
 
+#==================================================================
 # Workspace
+#==================================================================
+
 set $WS1 console
-set $WS2 editor
+set $WS2 code
 set $WS3 web
 set $WS4 vm
 set $WS5 social
 set $WS6 media
+set $WS7 game
+set $WS8 other
 
-# change focus
-bindsym $mod+$left focus left
-bindsym $mod+$down focus down
-bindsym $mod+$up focus up
-bindsym $mod+$right focus right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
-# move focused window
-bindsym $mod+Shift+$left move left
-bindsym $mod+Shift+$down move down
-bindsym $mod+Shift+$up move up
-bindsym $mod+Shift+$right move right
-
-# use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
-
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-
-# kill focused window
-bindsym $mod+Shift+q kill
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
-# split in horizontal orientation
-bindsym $mod+h split h
-
-# split in vertical orientation
-bindsym $mod+v split v
-
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
-
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+plus focus mode_toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
-
-# focus the child container
-bindsym $mod+d focus child
-
-# Scratchpad 
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
-
-# switch to workspace
+# Switch keys 
 bindsym $mod+1 workspace $WS1
 bindsym $mod+2 workspace $WS2
 bindsym $mod+3 workspace $WS3
 bindsym $mod+4 workspace $WS4
 bindsym $mod+5 workspace $WS5
 bindsym $mod+6 workspace $WS6
+bindsym $mod+7 workspace $WS7
+bindsym $mod+8 workspace $WS8
 
-# move focused container to workspace
+# Move keys 
 bindsym $mod+Shift+1 move container to workspace $WS1
 bindsym $mod+Shift+2 move container to workspace $WS2
 bindsym $mod+Shift+3 move container to workspace $WS3
 bindsym $mod+Shift+4 move container to workspace $WS4
 bindsym $mod+Shift+5 move container to workspace $WS5
 bindsym $mod+Shift+6 move container to workspace $WS6
+bindsym $mod+Shift+7 move container to workspace $WS7
+bindsym $mod+Shift+8 move container to workspace $WS8
 
-# move to urgent window
+#==================================================================
+# Container
+#==================================================================
+
+# Split orientation 
+bindsym $mod+h split h
+bindsym $mod+v split v
+
+# Toggle layout 
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+#==================================================================
+# Window 
+#==================================================================
+
+# Change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# Move focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+# Move to urgent window
 bindsym $mod+x [urgent=latest] focus
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
+# Kill focused window
+bindsym $mod+Shift+q kill
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+# Fullscreen mode 
+bindsym $mod+f fullscreen toggle
 
-bindsym $mod+r mode "resize"
+# Toggle focus between tiling / floating window
+bindsym $mod+plus focus mode_toggle
+
+# Toggle mode between tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+#==================================================================
+# Scratchpad 
+#==================================================================
+
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+space scratchpad show
+
+#==================================================================
+# i3 
+#==================================================================
 
 font pango: Share Tech 9
 client.focused          #333333 #333333 #FFFFFF
@@ -111,9 +108,23 @@ client.urgent           #E43A45 #E43A45 #FFFFFF
 client.focused_inactive #555555 #555555 #FFFFFF
 client.unfocused        #555555 #555555 #FFFFFF
 
-# i3bar configuration
+# Terminal 
+bindsym $mod+Return exec i3-sensible-terminal
+
+# Reload i3 configuration file
+bindsym $mod+Shift+c reload
+
+# Restart i3 
+bindsym $mod+Shift+r restart
+
+#==================================================================
+# i3bar
+#==================================================================
+
 bar {
+    id main
     position top 
+    mode dock
     tray_output eDP
     status_command i3status
 	font pango: Share Tech 9
@@ -132,20 +143,32 @@ bar {
 }
 
 # Toggle between hide state and show state
-bindsym $mod+m bar hidden_state hide
+bindsym $mod+m bar mode toggle main
+
+#==================================================================
+# Audio
+#==================================================================
 
 # Audio Control
 bindsym XF86AudioRaiseVolume exec "amixer -q set Master '5%+' unmute"
 bindsym XF86AudioLowerVolume exec "amixer -q set Master '5%-' unmute"
 bindsym XF86AudioMute exec "amixer -q set Master toggle"
 
-# Bind custom applications 
+#==================================================================
+# 3rd party applications 
+#==================================================================
+
+# dmenu
+bindsym $mod+d exec dmenu_run
+
+# Chrome apps launcher 
 bindsym $mod+p exec --no-startup-id chromium --show-app-list
 for_window [instance="chrome_app_list" window_role="bubble"] floating enable
 
-bindsym $mod+space exec dmenu_run
+#==================================================================
+# Power 
+#==================================================================
 
-# Window power configuration
 set $Locker i3lock && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
@@ -157,7 +180,6 @@ mode "$mode_system" {
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
     bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
 
-    # back to normal: Enter or Escape
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
