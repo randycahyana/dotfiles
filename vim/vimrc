@@ -2,7 +2,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-""""""""""""""""""""""""""""""""""""""""""""""""'
+"""""""""""""""""""""""""""""""""""""""""""""""""
 " UI configuration
 """""""""""""""""""""""""""""""""""""""""""""""""
 set tw=80
@@ -12,3 +12,22 @@ set sts=4
 set sw=4
 set et
 set bg=dark
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-go options
+"""""""""""""""""""""""""""""""""""""""""""""""""
+let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" YCM options after these other plugins (the defaults of vim-go changed somehow)
+"""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_auto_trigger = 1
+set completeopt-=preview
+
+inoremap <C-Space> <C-x><C-o>
+inoremap <C-@> <C-Space>
