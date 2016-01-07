@@ -72,9 +72,9 @@ set_prompts() {
 
     PS1="\[\033]0;\w\007\]";
     PS1+="\n\[$bold\]"
-    PS1+="\[$yellow\][\h "
+    PS1+="\[$yellow\][\u "
     PS1+="\[$white\]at "
-    PS1+="\$yellow\]\u] "
+    PS1+="\$yellow\]\h] "
     PS1+="\[$white\]: "
     PS1+="\[$orange\][\W]"
     PS1+="\$(prompt_git \"$white on $red\" \"$purple\")"

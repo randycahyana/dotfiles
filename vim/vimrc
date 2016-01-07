@@ -14,6 +14,16 @@ set et
 set bg=dark
 
 """""""""""""""""""""""""""""""""""""""""""""""""
+" Navigation
+"""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+imap ;; <Esc>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-go options
 """""""""""""""""""""""""""""""""""""""""""""""""
 let g:go_fmt_command = "goimports"
@@ -31,3 +41,13 @@ set completeopt-=preview
 
 inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Nerd Tree 
+"""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <F3> :NERDTreeToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Tagbar
+"""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <F8> :TagbarToggle<CR>
