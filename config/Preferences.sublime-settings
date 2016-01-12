@@ -1,16 +1,18 @@
 {
+	"auto_complete": false,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"detect_indentation": false,
 	"ensure_newline_at_eof_on_save": false,
 	"font_face": "Terminus",
-	"font_size": 12.5,
+	"font_size": 11.5,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
 	"remember_open_files": false,
 	"rulers":
