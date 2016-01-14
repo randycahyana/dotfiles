@@ -1,7 +1,6 @@
 {
 	"auto_complete": false,
 	"auto_complete_commit_on_tab": true,
-	"auto_complete_with_fields": true,
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
