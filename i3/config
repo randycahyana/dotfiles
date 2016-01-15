@@ -9,10 +9,10 @@ floating_modifier $mod
 # Movement keys
 #==================================================================
 
-set $up l
+set $up j
 set $down k
-set $left j
-set $right semicolon
+set $left h
+set $right l
 
 #==================================================================
 # Workspace
@@ -55,7 +55,7 @@ bindsym $mod+b workspace back_and_forth
 #==================================================================
 
 # Split orientation 
-bindsym $mod+h split h
+bindsym $mod+g split h
 bindsym $mod+v split v
 
 # Toggle layout 
