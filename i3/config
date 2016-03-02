@@ -168,6 +168,13 @@ bindsym $mod+d exec dmenu_run
 bindsym $mod+p exec --no-startup-id chromium --show-app-list
 for_window [instance="chrome_app_list" window_role="bubble"] floating enable
 
+# Disabe i3 keys
+mode "passthrough" {
+    bindsym $mod+Escape mode "default"
+
+}
+bindsym $mod+Escape mode "passthrough"
+
 #==================================================================
 # Power 
 #==================================================================
@@ -188,3 +195,9 @@ mode "$mode_system" {
 }
 
 bindsym $mod+Shift+e mode "$mode_system"
+
+#==================================================================
+# Startup applications 
+#==================================================================
+
+exec enpass
