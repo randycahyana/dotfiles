@@ -9,3 +9,7 @@
 - ln -s ~/dotfiles/vim ~/.vim
 - ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 - ln -s ~/dotfiles/i3 ~/.i3
+- ln -s ~/dotfiles/X/xinitrc
+- ln -s ~/dotfiles/X/Xresources
+- ln -s ~/dotfiles/config/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/
+

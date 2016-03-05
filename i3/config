@@ -21,7 +21,7 @@ set $right l
 set $WS1 console
 set $WS2 code
 set $WS3 web
-set $WS4 vm
+set $WS4 tools
 set $WS5 social
 set $WS6 media
 set $WS7 game
@@ -199,5 +199,5 @@ bindsym $mod+Shift+e mode "$mode_system"
 #==================================================================
 # Startup applications 
 #==================================================================
-
+exec urxvt
 exec enpass
