@@ -8,9 +8,4 @@ export RANCH="/ranch"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
-# Go
-export GOPATH="$RANCH/playground/go"
-
-# Path
-export PATH="$PATH:$HOME/bin:/usr/local/go/bin:$GOPATH/bin:/usr/local/rkt";
-
+export TERM=rxvt-256color

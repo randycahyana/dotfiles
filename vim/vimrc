@@ -4,17 +4,23 @@ filetype plugin indent on
 
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
+set noerrorbells
+set novisualbell
+set nobackup
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " UI configuration
 """""""""""""""""""""""""""""""""""""""""""""""""
+set t_Co=256
+set ruler
 set tw=80
 set nu
 set ts=4
 set sts=4
 set sw=4
 set et
-set bg=dark
+
+colorscheme molokai
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Navigation
@@ -46,9 +52,14 @@ inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>
 
 """""""""""""""""""""""""""""""""""""""""""""""""
-" Nerd Tree 
+" Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""
 nmap <F3> :NERDTreeToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim Airline
+"""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_theme='powerlineish'
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Tagbar
