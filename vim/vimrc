@@ -41,15 +41,14 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""
-" YCM options after these other plugins (the defaults of vim-go changed somehow)
+" Neocomplete
 """""""""""""""""""""""""""""""""""""""""""""""""
-let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_min_num_of_chars_for_completion = 1
-let g:ycm_auto_trigger = 1
-set completeopt-=preview
-
-inoremap <C-Space> <C-x><C-o>
-inoremap <C-@> <C-Space>
+let g:neocomplete#enable_at_startup = 1
+inoremap <expr><C-g> neocomplete#undo_completion()
+inoremap <expr><C-l> neocomplete#complete_common_string()
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Nerd Tree
@@ -59,7 +58,10 @@ map <F3> :NERDTreeToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Vim Airline
 """""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline_theme='powerlineish'
+set laststatus=2
+let g:airline_theme = 'bubblegum'
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Tagbar
