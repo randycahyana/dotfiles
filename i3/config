@@ -105,7 +105,7 @@ bindsym $mod+space scratchpad show
 # i3 
 #==================================================================
 
-font pango: Share Tech 9
+font pango: Inconsolata 10
 client.focused          #333333 #333333 #FFFFFF
 client.urgent           #E43A45 #E43A45 #FFFFFF
 client.focused_inactive #555555 #555555 #FFFFFF
@@ -130,7 +130,7 @@ bar {
     mode dock
     tray_output eDP
     status_command i3status
-	font pango: Share Tech 9
+	font pango: Inconsolata 10
 	colors {
 		background #333333
 		statusline #9E9E9E
