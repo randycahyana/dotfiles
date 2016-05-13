@@ -6,8 +6,8 @@
 	"default_line_ending": "unix",
 	"detect_indentation": false,
 	"ensure_newline_at_eof_on_save": false,
-	"font_face": "Terminus",
-	"font_size": 11.5,
+	"font_face": "Inconsolata",
+	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
@@ -26,5 +26,6 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true,
-	"wrap_width": 80
+	"wrap_width": 80,
+	"update_check": false
 }
