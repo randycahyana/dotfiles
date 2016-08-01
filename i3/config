@@ -112,7 +112,7 @@ client.focused_inactive #555555 #555555 #FFFFFF
 client.unfocused        #555555 #555555 #FFFFFF
 
 # Terminal 
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt -cd "`xcwd`"
 
 # Reload i3 configuration file
 bindsym $mod+Shift+c reload
