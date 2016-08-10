@@ -12,14 +12,12 @@ set nobackup
 " UI configuration
 """""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256
-set ruler
 set tw=80
 set nu
 set ts=4
 set sts=4
 set sw=4
 set et
-set cc=80
 
 colorscheme molokai
 

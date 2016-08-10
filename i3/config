@@ -18,6 +18,16 @@ set $right l
 # Workspace
 #==================================================================
 
+set $default_gaps_inner 5
+set $default_gaps_outer 1
+
+gaps inner $default_gaps_inner
+gaps outer $default_gaps_outer
+
+smart_borders on
+smart_gaps on
+for_window [class="^.*"] border pixel 0
+
 set $WS1 console
 set $WS2 code
 set $WS3 web

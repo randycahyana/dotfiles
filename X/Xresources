@@ -27,3 +27,7 @@ URxvt.color12: #729FCF
 URxvt.color13: #AD7FA8
 URxvt.color14: #fcaf3e
 URxvt.color15: #EEEEEC
+
+URxvt.perl-ext-common: fullscreen
+
+URxvt.keysym.F11: perl:fullscreen:switch
