@@ -38,3 +38,20 @@ URxvt.fading: 20
 
 URxvt.perl-ext-common: fullscreen
 URxvt.keysym.F11: perl:fullscreen:switch
+
+
+! rofi
+rofi.modi: run
+rofi.width: 50
+rofi.lines: 5
+rofi.columns: 1
+rofi.opacity: 70
+!                    bg       fg      altbg    hlbg     hlfg
+rofi.color-normal: #282828, #ebdbb2, #282828, #ebdbb2, #282828
+rofi.color-urgent: #282828, #ebdbb2, #282828, #ebdbb2, #282828
+rofi.color-active: #282828, #ebdbb2, #282828, #ebdbb2, #282828
+rofi.color-window: #282828, #282828
+rofi.bw: 0
+rofi.location: 2
+rofi.padding: 20
+rofi.fuzzy: false

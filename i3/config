@@ -171,8 +171,8 @@ bindsym XF86AudioMute exec "amixer -q set Master toggle"
 # 3rd party applications 
 #==================================================================
 
-# dmenu
-bindsym $mod+d exec dmenu_run
+# rofi
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 # Chrome apps launcher 
 bindsym $mod+p exec --no-startup-id chromium --show-app-list
@@ -211,3 +211,4 @@ bindsym $mod+Shift+e mode "$mode_system"
 #==================================================================
 exec urxvt
 exec enpass
+exec --no-startup-id nitrogen --restore
