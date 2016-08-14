@@ -2,7 +2,7 @@ URxvt.loginShell: true
 URxvt.geometry: 80x50
 URxvt.saveLines: 10000
 URxvt.cutchars: "`\"'&()*,:;<=>?[\\]^{|}$"
-urxvt.font: xft:Inconsolata\ for\ Powerline:pixelsize=14:antialias=true
+urxvt.font: xft:Inconsolata\ for\ Powerline:pixelsize=15:antialias=true
 URxvt.colorBD: rgb:fc/fc/fc
 URxvt.scrollBar: false
 URxvt.visualBell: true
