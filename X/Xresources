@@ -7,6 +7,8 @@ URxvt.colorBD: rgb:fc/fc/fc
 URxvt.scrollBar: false
 URxvt.visualBell: true
 URxvt.fading: 20
+URxvt.transparent: true
+URxvt.shading: 20
 
 ! Color Scheme
 *background: #232C31

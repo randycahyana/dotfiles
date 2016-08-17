@@ -18,7 +18,7 @@ set $right l
 # Workspace
 #==================================================================
 
-set $default_gaps_inner 5
+set $default_gaps_inner 8
 set $default_gaps_outer 1
 
 gaps inner $default_gaps_inner
