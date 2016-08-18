@@ -12,7 +12,6 @@ alias l="ls -la"
 alias hosts="sudo $EDITOR /etc/hosts"
 alias dot="cd $HOME/dotfiles"
 alias dc="docker-compose"
-alias vsc="visual-studio-code"
 
 # Override commands
 alias rm="rm -i"
