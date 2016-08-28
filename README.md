@@ -1,11 +1,12 @@
 ## Requirement: 
-- Git
-- Urxvt-unicode
-- Inconsolata for powerline
-- Vim
-- I3-gaps
+- git
+- urxvt-unicode
+- inconsolata for powerline
+- vim
+- i3-gaps
 - i3-status
-- Rofi
+- rofi
+- xcwd (optional)
 
 ## Installation Step:
 - Clone dotfiles repository along with the submodules
