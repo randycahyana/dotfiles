@@ -1,0 +1,7 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    { "key": "alt+space",           "command": "workbench.action.terminal.focus"},
+    { "key": "alt+right",           "command": "workbench.action.terminal.focusNext"},
+    { "key": "alt+left",            "command": "workbench.action.terminal.focusPrevious"},
+    { "key": "alt+backspace",       "command": "workbench.action.terminal.kill"},
+]

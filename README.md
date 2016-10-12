@@ -23,5 +23,6 @@
         - ln -sf ~/dotfiles/i3 ~/.i3
         - ln -sf ~/dotfiles/X/xinitrc ~/.xinitrc
         - ln -sf ~/dotfiles/X/Xresources ~/.Xresources
-        - (optional) ln -sf ~/dotfiles/config/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/ 
-
+        - (optional - Sublime Text) ln -sf ~/dotfiles/config/sublime-text/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/ 
+        - (optional - Visual Studio Code) ln -sf ~/dotfiles/config/visual-studio-code/keybindings.json ~/.config/Code/User/keybindings.json 
+        - (optional - Visual Studio Code) ln -sf ~/dotfiles/config/visual-studio-code/settings.json ~/.config/Code/User/settings.json 
