@@ -13,7 +13,6 @@ alias l="ls -la"
 alias hosts="sudo $EDITOR /etc/hosts"
 alias dot="cd $HOME/dotfiles"
 alias dc="docker-compose"
-alias gorc="go1.8rc1"
 
 # Override commands
 alias rm="rm -i"
