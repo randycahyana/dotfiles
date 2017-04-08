@@ -16,3 +16,5 @@ ln -s $SRC/nvim ~/.config/nvim
 
 echo "Linking: $SRC/git/gitconfig to ~/.gitconfig"
 ln -s $SRC/git/gitconfig ~/.gitconfig
+
+source ~/.bashrc
