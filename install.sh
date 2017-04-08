@@ -11,6 +11,7 @@ for i in $(ls $SRC/bash); do
 done
 
 echo "Linking: $SRC/nvm to ~/.config/nvim"
+mkdir -p ~/.config
 ln -s $SRC/nvim ~/.config/nvim
 
 echo "Linking: $SRC/git/gitconfig to ~/.gitconfig"
