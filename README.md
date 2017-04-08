@@ -1,15 +1,3 @@
-## Installation Step:
-- Clone dotfiles repository along with the submodules
-- Git clone --recursive git@github.com:ranch/dotfiles.git
- - Link files
-        - ln -sf ~/dotfiles/bash/bash_profile ~/.bash_profile
-        - ln -sf ~/dotfiles/bash/bashrc ~/.bashrc
-        - ln -sf ~/dotfiles/bash/extend.bashrc ~/.extend.bashrc
-        - ln -sf ~/dotfiles/bash/bash_prompt ~/.bash_prompt
-        - ln -sf ~/dotfiles/bash/aliases ~/.aliases
-        - ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
-        - ln -sf ~/dotfiles/vim ~/.vim
-        - ln -sf ~/dotfiles/vim/vimrc ~/.vimrc
-        - (optional - Sublime Text) ln -sf ~/dotfiles/config/sublime-text/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/ 
-        - (optional - Visual Studio Code) ln -sf ~/dotfiles/config/visual-studio-code/keybindings.json ~/.config/Code/User/keybindings.json 
-        - (optional - Visual Studio Code) ln -sf ~/dotfiles/config/visual-studio-code/settings.json ~/.config/Code/User/settings.json 
+## Pre-requisite
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
