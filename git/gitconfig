@@ -2,7 +2,7 @@
 	name = Randy Cahyana
 	email = ranch@randycahyana.com
 [core]
-	editor = vim
+	editor = nvim
 [alias]
     s = status
     a = add -A .
@@ -14,4 +14,4 @@
     flat = clone --depth 1
 [push]
 	default = simple
-		
+
