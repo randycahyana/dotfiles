@@ -1,6 +1,7 @@
+// Place your settings in this file to overwrite the default settings
 {
-    "terminal.integrated.shellArgs.linux": ["-l"],
-
+    "workbench.welcome.enabled": false,
+    
     "go.buildOnSave": true,
     "go.lintOnSave": true,
     "go.vetOnSave": true,
@@ -11,10 +12,15 @@
     "go.vetFlags": [],
     "go.coverOnSave": false,
     "go.useCodeSnippetsOnFunctionSuggest": false,
-    "go.formatOnSave": true,
-    "go.formatTool": "goreturns",
+    "go.formatOnSave": true, 
+    "go.formatTool": "goimports",
     "go.formatFlags": [],
-    "go.goroot": "/usr/lib/go",
-    "go.gopath": "/data/workspace/go",
-    "go.gocodeAutoBuild": false
+    "go.goroot": "/usr/local/go",
+    "go.gopath": "/data/E/Workspace/go",
+    "go.gocodeAutoBuild": false,
+
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": true
 }
