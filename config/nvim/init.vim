@@ -48,7 +48,6 @@ Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM'), 'for': ['c', 'cpp',
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemoteUpdate'), 'for': ['scala', 'groovy', 'go'] } | Plug 'ervandew/supertab'
 
 " Others
-Plug 'SirVer/ultisnips'
 Plug 'tmhedberg/matchit'
 Plug 'Yggdroot/indentLine'
 Plug 'Raimondi/delimitMate'
