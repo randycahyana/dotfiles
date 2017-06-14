@@ -12,7 +12,7 @@ done
 
 echo "Linking: $SRC/nvm to ~/.config/nvim"
 mkdir -p ~/.config
-ln -s $SRC/nvim ~/.config/nvim
+ln -s $SRC/config/nvim ~/.config/nvim
 
 echo "Linking: $SRC/git/gitconfig to ~/.gitconfig"
 ln -s $SRC/git/gitconfig ~/.gitconfig
