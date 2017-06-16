@@ -20,7 +20,7 @@ endfunction
 
 " Deoplete
 function! DoRemoteUpdate(arg)
-  UpdateRemotePlugins
+ UpdateRemotePlugins
 endfunction<Paste>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,6 +45,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 
 " Code completion
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM'), 'for': ['c', 'cpp', 'objc', 'objcpp'] } | Plug 'ervandew/supertab' | Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plug 'SirVer/ultisnips'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemoteUpdate'), 'for': ['scala', 'groovy', 'go'] } | Plug 'ervandew/supertab'
 
 " Others
@@ -56,6 +57,7 @@ Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug 'floobits/floobits-neovim'
 
 " Languages
 Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
@@ -165,3 +167,13 @@ autocmd BufNewFile,BufRead *.thrift setlocal filetype=thrift
 
 " override settings from vim-sensible
 autocmd FileType * set noautoindent nottimeout ttimeoutlen=0
+
+if has("unix")
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    " set python hosts
+    let g:python2_host_prog = '/opt/local/bin/python2.7'
+    let g:python3_host_prog = '/opt/local/bin/python3.4'
+  endif
+endif
+
