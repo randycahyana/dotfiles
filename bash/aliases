@@ -16,3 +16,6 @@ alias dc="docker-compose"
 
 # Override commands
 alias rm="rm -i"
+
+# Shortcuts
+alias chromeless="docker run -d -p 9222:9222 --name chrome-headless knqz/chrome-headless"
