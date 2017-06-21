@@ -74,6 +74,7 @@ Plug '~/src/protobuf/editors', { 'for': 'proto' }
 Plug 'tikhomirov/vim-glsl', { 'for': 'glsl' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' } | Plug 'pangloss/vim-javascript' "| Plug 'mxw/vim-jsx'
 Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'posva/vim-vue'
 
 call plug#end()
 
