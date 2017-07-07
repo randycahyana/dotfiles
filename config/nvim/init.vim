@@ -1,11 +1,10 @@
 set title number relativenumber completeopt-=preview
 set tabstop=4 shiftwidth=4 expandtab
 set encoding=utf-8 nobomb
-set ignorecase smartcase gdefault
+set ignorecase smartcase
+set scrolloff=999
 
-" keep cursor in center of screen
-set scrolloff=40 showmode showcmd hidden wildmode=list:longest
-
+" override higlight color
 highlight Search     ctermfg=Black	ctermbg=Red	cterm=NONE
 highlight Cursor     ctermfg=Black	ctermbg=Red	cterm=bold
 
