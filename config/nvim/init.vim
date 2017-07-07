@@ -3,9 +3,13 @@ set tabstop=4 shiftwidth=4 expandtab
 set encoding=utf-8 nobomb
 set ignorecase smartcase gdefault
 
-syntax on
-highlight clear SignColumn
+" keep cursor in center of screen
+set scrolloff=40 showmode showcmd hidden wildmode=list:longest
 
+highlight Search     ctermfg=Black	ctermbg=Red	cterm=NONE
+highlight Cursor     ctermfg=Black	ctermbg=Red	cterm=bold
+
+syntax on
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Functions
@@ -177,4 +181,5 @@ if has("unix")
     let g:python3_host_prog = '/opt/local/bin/python3.4'
   endif
 endif
+
 
