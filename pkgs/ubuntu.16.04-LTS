@@ -365,6 +365,7 @@ ii  hicolor-icon-theme                          0.15-0ubuntu1                   
 ii  hostname                                    3.16ubuntu2                                   amd64        utility to set/show the host name or domain name
 ii  hplip                                       3.16.3+repack0-1                              amd64        HP Linux Printing and Imaging System (HPLIP)
 ii  hplip-data                                  3.16.3+repack0-1                              all          HP Linux Printing and Imaging - data files
+ii  httrack                                     3.48.21-1                                     amd64        Copy websites to your computer (Offline browser)
 ii  hud                                         14.10+16.04.20160415-0ubuntu1                 amd64        Backend for the Unity HUD
 ii  humanity-icon-theme                         0.6.10.1                                      all          Humanity Icon theme
 ii  hunspell-en-us                              20070829-6ubuntu3                             all          English_american dictionary for hunspell
@@ -510,7 +511,9 @@ ii  libbluray1:amd64                            1:0.9.2-2                       
 ii  libboost-date-time1.58.0:amd64              1.58.0+dfsg-5ubuntu3.1                        amd64        set of date-time libraries based on generic programming concepts
 ii  libboost-filesystem1.58.0:amd64             1.58.0+dfsg-5ubuntu3.1                        amd64        filesystem operations (portable paths, iteration over directories, etc) in C++
 ii  libboost-iostreams1.58.0:amd64              1.58.0+dfsg-5ubuntu3.1                        amd64        Boost.Iostreams Library
+ii  libboost-regex1.58.0:amd64                  1.58.0+dfsg-5ubuntu3.1                        amd64        regular expression library for C++
 ii  libboost-system1.58.0:amd64                 1.58.0+dfsg-5ubuntu3.1                        amd64        Operating system (e.g. diagnostics support) library
+ii  libboost-thread1.58.0:amd64                 1.58.0+dfsg-5ubuntu3.1                        amd64        portable C++ multi-threading
 ii  libbrlapi0.6:amd64                          5.3.1-2ubuntu2.1                              amd64        braille display access via BRLTTY - shared library
 ii  libbs2b0:amd64                              3.1.0+dfsg-2.2                                amd64        Bauer stereophonic-to-binaural DSP library
 ii  libbsd0:amd64                               0.8.2-1                                       amd64        utility functions from BSD systems - shared library
@@ -549,6 +552,7 @@ ii  libcheese8:amd64                            3.18.1-2ubuntu3                 
 ii  libchromaprint0:amd64                       1.3-1                                         amd64        audio fingerprint library
 ii  libcilkrts5:amd64                           5.4.0-6ubuntu1~16.04.4                        amd64        Intel Cilk Plus language extensions (runtime)
 ii  libclass-accessor-perl                      0.34-1                                        all          Perl module that automatically generates accessors
+ii  libcld2-0:amd64                             0.0.0-git20150806-2                           amd64        Compact Language Detector 2, library package
 ii  libclone-perl                               0.38-1build1                                  amd64        module for recursively copying Perl datatypes
 ii  libclucene-contribs1v5:amd64                2.3.3.4-4.1                                   amd64        language specific text analyzers (runtime)
 ii  libclucene-core1v5:amd64                    2.3.3.4-4.1                                   amd64        core library for full-featured text search engine (runtime)
@@ -568,6 +572,7 @@ ii  libcolumbus1-common                         1.1.0+15.10.20150806-0ubuntu4   
 ii  libcolumbus1v5:amd64                        1.1.0+15.10.20150806-0ubuntu4                 amd64        error tolerant matching engine - shared library
 ii  libcomerr2:amd64                            1.42.13-1ubuntu1                              amd64        common error description library
 ii  libcompizconfig0:amd64                      1:0.9.12.2+16.04.20160823-0ubuntu1            amd64        Settings library for plugins - OpenCompositing Project
+ii  libcpprest2.8:amd64                         2.8.0-2                                       amd64        Shared library for Casablanca
 ii  libcrack2:amd64                             2.9.2-1build2                                 amd64        pro-active password checker library
 ii  libcroco3:amd64                             0.6.11-1                                      amd64        Cascading Style Sheet (CSS) parsing and manipulation toolkit
 ii  libcryptsetup4:amd64                        2:1.6.6-5ubuntu2                              amd64        disk encryption support - shared library
@@ -584,6 +589,7 @@ ii  libdaemon0:amd64                            0.14-6                          
 ii  libdata-alias-perl                          1.20-1build1                                  amd64        module to create aliases instead of copies
 ii  libdatrie1:amd64                            0.2.10-2                                      amd64        Double-array trie library
 ii  libdb5.3:amd64                              5.3.28-11                                     amd64        Berkeley v5.3 Database Libraries [runtime]
+ii  libdb5.3++:amd64                            5.3.28-11                                     amd64        Berkeley v5.3 Database Libraries for C++ [runtime]
 ii  libdbus-1-3:amd64                           1.10.6-1ubuntu3.3                             amd64        simple interprocess messaging system (library)
 ii  libdbus-glib-1-2:amd64                      0.106-1                                       amd64        simple interprocess messaging system (GLib-based shared library)
 ii  libdbusmenu-glib4:amd64                     16.04.1+16.04.20160927-0ubuntu1               amd64        library for passing menus over DBus
@@ -784,6 +790,7 @@ ii  libgtkmm-2.4-1v5:amd64                      1:2.24.4-2                      
 ii  libgtkmm-3.0-1v5:amd64                      3.18.0-1                                      amd64        C++ wrappers for GTK+ (shared libraries)
 ii  libgtksourceview-3.0-1:amd64                3.18.2-1                                      amd64        shared libraries for the GTK+ syntax highlighting widget
 ii  libgtksourceview-3.0-common                 3.18.2-1                                      all          common files for the GTK+ syntax highlighting widget
+ii  libgtkspell0                                2.0.16-1.1ubuntu1                             amd64        a spell-checking addon for GTK's TextView widget
 ii  libgtkspell3-3-0:amd64                      3.0.7-2                                       amd64        spell-checking addon for GTK+'s TextView widget
 ii  libgtop-2.0-10:amd64                        2.32.0-1                                      amd64        gtop system monitoring library (shared)
 ii  libgtop2-common                             2.32.0-1                                      all          gtop system monitoring library (common)
@@ -812,6 +819,7 @@ ii  libhttp-daemon-perl                         6.01-1                          
 ii  libhttp-date-perl                           6.02-1                                        all          module of date conversion routines
 ii  libhttp-message-perl                        6.11-1                                        all          perl interface to HTTP style messages
 ii  libhttp-negotiate-perl                      6.00-2                                        all          implementation of content negotiation
+ii  libhttrack2                                 3.48.21-1                                     amd64        Httrack website copier library
 ii  libhud2:amd64                               14.10+16.04.20160415-0ubuntu1                 amd64        library for exporting items to the Unity HUD
 ii  libhunspell-1.3-0:amd64                     1.3.3-4ubuntu1                                amd64        spell checker and morphological analyzer (shared library)
 ii  libhx509-5-heimdal:amd64                    1.7~git20150920+dfsg-4ubuntu1                 amd64        Heimdal Kerberos - X509 support library
@@ -894,6 +902,7 @@ ii  liblsan0:amd64                              5.4.0-6ubuntu1~16.04.4          
 ii  libltdl-dev:amd64                           2.4.6-0.1                                     amd64        System independent dlopen wrapper for GNU libtool
 ii  libltdl7:amd64                              2.4.6-0.1                                     amd64        System independent dlopen wrapper for GNU libtool
 ii  liblua5.2-0:amd64                           5.2.4-1ubuntu1                                amd64        Shared library for the Lua interpreter version 5.2
+ii  liblucene++0v5:amd64                        3.0.7-8                                       amd64        Shared library for Lucene++
 ii  liblwp-mediatypes-perl                      6.02-1                                        all          module to guess media type for a file or a URL
 ii  liblwp-protocol-https-perl                  6.06-2                                        all          HTTPS driver for LWP::UserAgent
 ii  liblwres141:amd64                           1:9.10.3.dfsg.P4-8ubuntu1.7                   amd64        Lightweight Resolver Library used by BIND
@@ -1055,8 +1064,8 @@ ii  libpng12-dev:amd64                          1.2.54-1ubuntu1                 
 ii  libpolkit-agent-1-0:amd64                   0.105-14.1                                    amd64        PolicyKit Authentication Agent API
 ii  libpolkit-backend-1-0:amd64                 0.105-14.1                                    amd64        PolicyKit backend API
 ii  libpolkit-gobject-1-0:amd64                 0.105-14.1                                    amd64        PolicyKit Authorization API
-ii  libpoppler-glib8:amd64                      0.41.0-0ubuntu1.1                             amd64        PDF rendering library (GLib-based shared library)
-ii  libpoppler58:amd64                          0.41.0-0ubuntu1.1                             amd64        PDF rendering library
+ii  libpoppler-glib8:amd64                      0.41.0-0ubuntu1.2                             amd64        PDF rendering library (GLib-based shared library)
+ii  libpoppler58:amd64                          0.41.0-0ubuntu1.2                             amd64        PDF rendering library
 ii  libpopt0:amd64                              1.16-10                                       amd64        lib for parsing cmdline parameters
 ii  libportaudio2:amd64                         19+svn20140130-1build1                        amd64        Portable audio I/O - shared library
 ii  libpostproc-ffmpeg53:amd64                  7:2.8.11-0ubuntu0.16.04.1                     amd64        FFmpeg library for post processing - runtime files
@@ -1181,7 +1190,7 @@ ii  libsigsegv2:amd64                           2.10-4                          
 ii  libslang2:amd64                             2.3.0-2ubuntu1                                amd64        S-Lang programming library - runtime version
 ii  libsm6:amd64                                2:1.2.2-1                                     amd64        X11 Session Management library
 ii  libsmartcols1:amd64                         2.27.1-6ubuntu3.2                             amd64        smart column output alignment library
-ii  libsmbclient:amd64                          2:4.3.11+dfsg-0ubuntu0.16.04.7                amd64        shared library for communication with SMB/CIFS servers
+ii  libsmbclient:amd64                          2:4.3.11+dfsg-0ubuntu0.16.04.8                amd64        shared library for communication with SMB/CIFS servers
 ii  libsnapd-glib1:amd64                        1.2-0ubuntu1.1~xenial                         amd64        GLib snapd library
 ii  libsnappy1v5:amd64                          1.1.3-2                                       amd64        fast compression/decompression library
 ii  libsndfile1:amd64                           1.0.25-10ubuntu0.16.04.1                      amd64        Library for reading/writing audio files
@@ -1303,7 +1312,7 @@ ii  libwayland-client0:amd64                    1.9.0-1                         
 ii  libwayland-cursor0:amd64                    1.9.0-1                                       amd64        wayland compositor infrastructure - cursor library
 ii  libwayland-egl1-mesa:amd64                  12.0.6-0ubuntu0.16.04.1                       amd64        implementation of the Wayland EGL platform -- runtime
 ii  libwayland-server0:amd64                    1.9.0-1                                       amd64        wayland compositor infrastructure - server library
-ii  libwbclient0:amd64                          2:4.3.11+dfsg-0ubuntu0.16.04.7                amd64        Samba winbind client library
+ii  libwbclient0:amd64                          2:4.3.11+dfsg-0ubuntu0.16.04.8                amd64        Samba winbind client library
 ii  libwebkit2gtk-4.0-37:amd64                  2.16.3-0ubuntu0.16.04.1                       amd64        Web content engine library for GTK+
 ii  libwebkit2gtk-4.0-37-gtk2:amd64             2.16.3-0ubuntu0.16.04.1                       amd64        Web content engine library for GTK+ - GTK+2 plugin process
 ii  libwebp5:amd64                              0.4.4-1                                       amd64        Lossy compression of digital photographic images.
@@ -1342,6 +1351,8 @@ ii  libwps-0.4-4:amd64                          0.4.3-1ubuntu1                  
 ii  libwrap0:amd64                              7.6.q-25                                      amd64        Wietse Venema's TCP wrappers library
 ii  libwww-perl                                 6.15-1                                        all          simple and consistent interface to the world-wide web
 ii  libwww-robotrules-perl                      6.01-1                                        all          database of robots.txt-derived permissions
+ii  libwxbase3.0-0v5:amd64                      3.0.2+dfsg-1.3ubuntu0.1                       amd64        wxBase library (runtime) - non-GUI support classes of wxWidgets toolkit
+ii  libwxgtk3.0-0v5:amd64                       3.0.2+dfsg-1.3ubuntu0.1                       amd64        wxWidgets Cross-platform C++ GUI toolkit (GTK+ runtime)
 ii  libx11-6:amd64                              2:1.6.3-1ubuntu2                              amd64        X11 client-side library
 ii  libx11-data                                 2:1.6.3-1ubuntu2                              all          X11 client-side library
 ii  libx11-protocol-perl                        0.56-7                                        all          Perl module for the X Window System Protocol, version 11
@@ -1535,11 +1546,13 @@ ii  plymouth-label                              0.9.2-3ubuntu13.1               
 ii  plymouth-theme-ubuntu-logo                  0.9.2-3ubuntu13.1                             amd64        boot animation, logger and I/O multiplexer - ubuntu theme
 ii  plymouth-theme-ubuntu-text                  0.9.2-3ubuntu13.1                             amd64        boot animation, logger and I/O multiplexer - ubuntu text theme
 ii  pm-utils                                    1.4.1-16                                      all          utilities and scripts for power management
+ii  poedit                                      1.8.7.1-2                                     amd64        gettext catalog editor
+ii  poedit-common                               1.8.7.1-2                                     all          Common files for poedit
 ii  policykit-1                                 0.105-14.1                                    amd64        framework for managing administrative policies and privileges
 ii  policykit-1-gnome                           0.105-2ubuntu2                                amd64        GNOME authentication agent for PolicyKit-1
 ii  policykit-desktop-privileges                0.20                                          all          run common desktop actions without password
 ii  poppler-data                                0.4.7-7                                       all          encoding data for the poppler PDF rendering library
-ii  poppler-utils                               0.41.0-0ubuntu1.1                             amd64        PDF utilities (based on Poppler)
+ii  poppler-utils                               0.41.0-0ubuntu1.2                             amd64        PDF utilities (based on Poppler)
 ii  popularity-contest                          1.64ubuntu2                                   all          Vote for your favourite packages automatically
 ii  powermgmt-base                              1.31+nmu1                                     all          Common utils and configs for power management
 ii  ppp                                         2.4.7-1+2ubuntu1                              amd64        Point-to-Point Protocol (PPP) - daemon
@@ -1691,7 +1704,7 @@ ii  rhythmbox-plugins                           3.3-1ubuntu7                    
 ii  rsync                                       3.1.1-3ubuntu1                                amd64        fast, versatile, remote (and local) file-copying tool
 ii  rsyslog                                     8.16.0-1ubuntu3                               amd64        reliable system and kernel logging daemon
 ii  rtkit                                       0.11-4                                        amd64        Realtime Policy and Watchdog Daemon
-ii  samba-libs:amd64                            2:4.3.11+dfsg-0ubuntu0.16.04.7                amd64        Samba core libraries
+ii  samba-libs:amd64                            2:4.3.11+dfsg-0ubuntu0.16.04.8                amd64        Samba core libraries
 ii  sane-utils                                  1.0.25+git20150528-1ubuntu2                   amd64        API library for scanners -- utilities
 ii  sbsigntool                                  0.6-0ubuntu10.1                               amd64        utility for signing and verifying files for UEFI Secure Boot
 ii  seahorse                                    3.18.0-2ubuntu1                               amd64        GNOME front end for GnuPG
@@ -1753,10 +1766,10 @@ ii  tesseract-ocr-eng                           3.04.00-1                       
 ii  tesseract-ocr-equ                           3.04.00-1                                     all          tesseract-ocr language files for equations
 ii  tesseract-ocr-osd                           3.04.00-1                                     all          tesseract-ocr language files for script and orientation
 ii  thermald                                    1.5-2ubuntu2                                  amd64        Thermal monitoring and controlling daemon
-ii  thunderbird                                 1:52.1.1+build1-0ubuntu0.16.04.1              amd64        Email, RSS and newsgroup client with integrated spam filter
-ii  thunderbird-gnome-support                   1:52.1.1+build1-0ubuntu0.16.04.1              amd64        Email, RSS and newsgroup client - GNOME support
-ii  thunderbird-locale-en                       1:52.1.1+build1-0ubuntu0.16.04.1              amd64        English language pack for Thunderbird
-ii  thunderbird-locale-en-us                    1:52.1.1+build1-0ubuntu0.16.04.1              all          Transitional English language pack for Thunderbird
+ii  thunderbird                                 1:52.2.1+build1-0ubuntu0.16.04.1              amd64        Email, RSS and newsgroup client with integrated spam filter
+ii  thunderbird-gnome-support                   1:52.2.1+build1-0ubuntu0.16.04.1              amd64        Email, RSS and newsgroup client - GNOME support
+ii  thunderbird-locale-en                       1:52.2.1+build1-0ubuntu0.16.04.1              amd64        English language pack for Thunderbird
+ii  thunderbird-locale-en-us                    1:52.2.1+build1-0ubuntu0.16.04.1              all          Transitional English language pack for Thunderbird
 ii  time                                        1.7-25.1                                      amd64        GNU time program for measuring CPU resource usage
 ii  tk                                          8.6.0+9                                       amd64        Toolkit for Tcl and X11 (default version) - windowing shell
 ii  tk8.6                                       8.6.5-1                                       amd64        Tk toolkit for Tcl and X11 v8.6 - windowing shell
