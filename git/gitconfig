@@ -1,16 +1,18 @@
 [user]
 	name = Randy Cahyana
-	email = ranch@randycahyana.com
 [core]
 	editor = nvim
 [alias]
     s = status
     a = add -A .
     c = commit
+    lg = log
 	ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 	assume = update-index --assume-unchanged
 	unassume = update-index --no-assume-unchanged
     flat = clone --depth 1
 [push]
 	default = simple
+[branch]
+  autosetuprebase = always
 
