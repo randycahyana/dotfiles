@@ -4,6 +4,8 @@ set encoding=utf-8 nobomb
 set ignorecase smartcase
 set scrolloff=999
 
+set scrolloff=40 showmode showcmd hidden wildmode=list:longest
+
 " override higlight color
 highlight Search     ctermfg=Black	ctermbg=Red	cterm=NONE
 highlight Cursor     ctermfg=Black	ctermbg=Red	cterm=bold
@@ -49,7 +51,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Code completion
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM'), 'for': ['c', 'cpp', 'objc', 'objcpp'] } | Plug 'ervandew/supertab' | Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'SirVer/ultisnips'
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemoteUpdate'), 'for': ['scala', 'groovy', 'go'] } | Plug 'ervandew/supertab'
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemoteUpdate'), 'for': ['scala', 'groovy', 'go', 'typescript'] } | Plug 'ervandew/supertab'
 
 " Others
 Plug 'tmhedberg/matchit'
@@ -60,7 +62,6 @@ Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'floobits/floobits-neovim'
 
 " Languages
 Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
@@ -68,16 +69,19 @@ Plug 'exu/pgsql.vim', { 'for': 'sql' }
 Plug 'fatih/vim-go', { 'for': 'go' } | Plug 'zchee/deoplete-go', { 'do': 'make' }
 Plug 'jparise/vim-graphql', { 'for': 'graphql' }
 Plug 'kenshaw/vim-java', { 'for': 'java' } | Plug 'artur-shaik/vim-javacomplete2'
-Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
+Plug 'mhartington/nvim-typescript', { 'for': 'typescript' }
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript'}
 Plug 'mxw/vim-xhp', { 'for': 'xhp' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } | Plug 'davinche/godown-vim'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'solarnz/thrift.vim', { 'for': 'thrift' }
 Plug '~/src/protobuf/editors', { 'for': 'proto' }
 Plug 'tikhomirov/vim-glsl', { 'for': 'glsl' }
-Plug 'othree/yajs.vim', { 'for': 'javascript' } | Plug 'pangloss/vim-javascript' "| Plug 'mxw/vim-jsx'
+Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'posva/vim-vue'
+Plug 'posva/vim-vue', { 'for': 'vue'}
+Plug 'mxw/vim-jsx', { 'for': 'jsx'}
+Plug 'ianks/vim-tsx', { 'for': 'tsx'}
 
 call plug#end()
 
@@ -175,10 +179,13 @@ autocmd FileType * set noautoindent nottimeout ttimeoutlen=0
 if has("unix")
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
-    " set python hosts
     let g:python2_host_prog = '/opt/local/bin/python2.7'
     let g:python3_host_prog = '/opt/local/bin/python3.4'
+  if s:uname == "Linux\n"
+    let g:python2_host_prog = '/usr/bin/python'
+    let g:python3_host_prog = '/usr/bin/python3'
   endif
+endif
 endif
 
 
