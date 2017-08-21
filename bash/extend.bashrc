@@ -14,3 +14,4 @@ for file in "${dotfiles[@]}"; do
     [ -r "$HOME/.$file" ] && source $HOME/.$file
 done
 unset file
+

@@ -69,17 +69,15 @@ Plug 'exu/pgsql.vim', { 'for': 'sql' }
 Plug 'fatih/vim-go', { 'for': 'go' } | Plug 'zchee/deoplete-go', { 'do': 'make' }
 Plug 'jparise/vim-graphql', { 'for': 'graphql' }
 Plug 'kenshaw/vim-java', { 'for': 'java' } | Plug 'artur-shaik/vim-javacomplete2'
-Plug 'mhartington/nvim-typescript', { 'for': 'typescript' }
-Plug 'leafgarland/typescript-vim', { 'for': 'typescript'}
 Plug 'mxw/vim-xhp', { 'for': 'xhp' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } | Plug 'davinche/godown-vim'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'solarnz/thrift.vim', { 'for': 'thrift' }
-Plug '~/src/protobuf/editors', { 'for': 'proto' }
 Plug 'tikhomirov/vim-glsl', { 'for': 'glsl' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
-Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'elzr/vim-json', { 'for': 'json' } 
 Plug 'posva/vim-vue', { 'for': 'vue'}
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript'} | Plug 'Quramy/tsuquyomi'
 Plug 'mxw/vim-jsx', { 'for': 'jsx'}
 Plug 'ianks/vim-tsx', { 'for': 'tsx'}
 
@@ -122,7 +120,7 @@ let g:ycm_semantic_triggers =  {
   \   'cpp,objcpp' : ['->', '.', '::'],
   \   'perl' : ['->'],
   \   'php' : ['->', '::'],
-  \   'cs,java,javascript,d,vim,python,perl6,scala,vb,elixir,go' : ['.'],
+  \   'cs,java,javascript,typescript,d,vim,python,perl6,scala,vb,elixir,go' : ['.'],
   \   'ruby' : ['.', '::'],
   \   'lua' : ['.', ':'],
   \   'erlang' : [':'],
