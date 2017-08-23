@@ -1608,6 +1608,7 @@ ii  nuvolaplayer3-tunein                        1.3-7~xenial                    
 ii  nuvolaplayer3-yandex-music                  1.4-7~xenial                                  amd64        Yandex Music for Nuvola Player 3
 ii  nuvolaplayer3-youtube                       1.3-7~xenial                                  amd64        YouTube for Nuvola Player 3
 ii  nux-tools                                   4.0.8+16.04.20160705-0ubuntu1                 amd64        Visual rendering toolkit for real-time applications - tools
+ii  nylas-mail                                  2.0.32                                        amd64        The best email app for people and teams at work
 ii  onboard                                     1.2.0-0ubuntu5                                amd64        Simple On-screen Keyboard
 ii  onboard-data                                1.2.0-0ubuntu5                                all          Language model files for the word suggestion feature of Onboard
 ii  openoffice.org-hyphenation                  0.9                                           all          Hyphenation patterns for OpenOffice.org
