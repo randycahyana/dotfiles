@@ -7,15 +7,10 @@ alias ~="cd $HOME"
 
 # Shortcuts 
 alias vi="nvim"
-alias vimrc="vi $HOME/.config/nvim/init.vim"
-alias subl="subl3"
+alias vdiff="vimdiff"
 alias l="ls -la"
-alias hosts="sudo $EDITOR /etc/hosts"
 alias dot="cd $HOME/dotfiles"
 alias dc="docker-compose"
-
-# Override commands
-alias rm="rm -i"
 
 # Shortcuts
 alias chromeless="docker run -d -p 9222:9222 --name chrome-headless knqz/chrome-headless"

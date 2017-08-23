@@ -174,6 +174,7 @@ autocmd BufNewFile,BufRead *.thrift setlocal filetype=thrift
 " override settings from vim-sensible
 autocmd FileType * set noautoindent nottimeout ttimeoutlen=0
 
+" python host
 if has("unix")
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
@@ -185,5 +186,10 @@ if has("unix")
   endif
 endif
 endif
+
+" ctrl-p settings
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|node_modules\|dist$',
+  \ }
 
 
