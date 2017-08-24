@@ -80,6 +80,7 @@ Plug 'posva/vim-vue', { 'for': 'vue'}
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript'} | Plug 'Quramy/tsuquyomi'
 Plug 'mxw/vim-jsx', { 'for': 'jsx'}
 Plug 'ianks/vim-tsx', { 'for': 'tsx'}
+Plug  'webdesus/polymer-ide.vim', { 'do': 'npm install' }
 
 call plug#end()
 
