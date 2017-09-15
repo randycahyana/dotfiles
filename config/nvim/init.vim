@@ -5,6 +5,7 @@ set ignorecase smartcase
 set scrolloff=999
 
 set scrolloff=40 showmode showcmd hidden wildmode=list:longest
+set signcolumn=yes
 
 " override higlight color
 highlight Search     ctermfg=Black	ctermbg=Red	cterm=NONE
@@ -80,7 +81,6 @@ Plug 'posva/vim-vue', { 'for': 'vue'}
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript'} | Plug 'Quramy/tsuquyomi'
 Plug 'mxw/vim-jsx', { 'for': 'jsx'}
 Plug 'ianks/vim-tsx', { 'for': 'tsx'}
-Plug  'webdesus/polymer-ide.vim', { 'do': 'npm install' }
 
 call plug#end()
 
@@ -96,7 +96,6 @@ let g:airline_theme= 'bubblegum'
 let g:closetag_filenames = '*.html,*.xml'
 let g:deoplete#enable_at_startup = 1
 let g:flow#qfsize = 0
-let g:gitgutter_sign_column_always = 1
 let g:go_auto_type_info = 1
 let g:godown_autorun = 1
 let g:godown_port = 7331
