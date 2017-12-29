@@ -65,15 +65,10 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " Languages
-Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
 Plug 'exu/pgsql.vim', { 'for': 'sql' }
 Plug 'fatih/vim-go', { 'for': 'go' } | Plug 'zchee/deoplete-go', { 'do': 'make' }
 Plug 'jparise/vim-graphql', { 'for': 'graphql' }
-Plug 'kenshaw/vim-java', { 'for': 'java' } | Plug 'artur-shaik/vim-javacomplete2'
-Plug 'mxw/vim-xhp', { 'for': 'xhp' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } | Plug 'davinche/godown-vim'
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-Plug 'solarnz/thrift.vim', { 'for': 'thrift' }
 Plug 'tikhomirov/vim-glsl', { 'for': 'glsl' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'elzr/vim-json', { 'for': 'json' } 
