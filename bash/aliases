@@ -1,16 +1,7 @@
-# Navigation
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd $HOME"
-
 # Shortcuts 
 alias vi="nvim"
 alias vdiff="vimdiff"
 alias l="ls -la"
 alias dot="cd $HOME/dotfiles"
 alias dc="docker-compose"
-
-# Shortcuts
 alias chromeless="docker run -d -p 9222:9222 --name chrome-headless knqz/chrome-headless"
