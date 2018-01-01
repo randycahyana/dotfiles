@@ -1,0 +1,47 @@
+general {
+    colors = true
+    interval = 5
+}
+
+order += "disk /"
+order += "wireless _first_"
+order += "ethernet enp3s0"
+order += "battery 0"
+order += "volume master"
+order += "tztime local"
+
+wireless _first_ {
+    format_up = "W: (%quality at %essid) %ip"
+    format_down = "W: down"
+}
+
+ethernet enp3s0 {
+    format_up = "E: %ip (%speed)"
+    format_down = "E: down"
+}
+
+disk "/" {
+    format = "%avail available on (/)"
+}
+
+cpu_usage {
+    format = "CPU %usage"
+}
+
+battery 0 {
+    format = "%status %percentage"
+    format_down = "No battery"
+    status_bat = "⚡"
+    status_full = "☻"
+    low_threshold = 10
+}
+
+volume master {
+    format = "♪ %volume"
+    format_muted = "♪ %volume"
+    device = "default"
+}
+
+tztime local {
+    format = "%A, %b %e %l:%M %P"
+}
