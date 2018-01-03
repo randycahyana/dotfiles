@@ -101,6 +101,8 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id /opt/Enpass/bin/runenpass.sh
 # Touchpad indicator
 exec --no-startup-id /opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator
+# Network manager
+exec --no-startup-id nm-applet --restore
 
 #==================================================================
 # Workspace
@@ -172,7 +174,6 @@ mode "$mode_system" {
 
 bindsym $mod+Shift+e mode "$mode_system"
 
-
 #==================================================================
 # Window rules
 #==================================================================
@@ -187,5 +188,3 @@ assign [class="^Slack"] 3
 
 assign [class="^Enpass-Desktop"] 10
 	for_window [class="^Enpass-Desktop$"] focus
-
-

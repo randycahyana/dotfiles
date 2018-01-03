@@ -2,24 +2,23 @@
 
 SRC="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# link shell config
+# shell config
 for i in $(ls $SRC/shell); do
   if [[ ! -f $i && ! -e $HOME/.$i ]]; then
-    echo "Linking: $SRC/bash/$i to ~/.$i"
-    ln -sf $SRC/shell/$i $HOME/.$i
+    ln -svf $SRC/shell/$i $HOME/.$i
   fi
 done
 
+# apps config
 for i in $(ls $SRC/config); do
-  if [[ ! -f $i && ! -e $HOME/.$i ]]; then
-    echo "Linking: $SRC/config/$i to ~/.config/$i"
-    ln -sf $SRC/config/$i $HOME/.config/$i
+  if [[ ! -f $i && ! -e $HOME/.config/$i ]]; then
+    ln -svf $SRC/config/$i $HOME/.config/$i
   fi
 done
 
+# git config
 for i in $(ls $SRC/git); do
   if [[ ! -f $i && ! -e $HOME/.$i ]]; then
-    echo "Linking: $SRC/git/$i to ~/.$i"
-    ln -sf $SRC/git/$i $HOME/.$i
+    ln -svf $SRC/git/$i $HOME/.$i
   fi
 done
