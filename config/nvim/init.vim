@@ -52,7 +52,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Code completion
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM'), 'for': ['c', 'cpp', 'objc', 'objcpp'] } | Plug 'ervandew/supertab' | Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'SirVer/ultisnips'
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemoteUpdate'), 'for': ['scala', 'groovy', 'go', 'typescript'] } | Plug 'ervandew/supertab'
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemoteUpdate')} 
+Plug 'ervandew/supertab'
 
 " Others
 Plug 'tmhedberg/matchit'
