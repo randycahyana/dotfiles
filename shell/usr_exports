@@ -1,0 +1,20 @@
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+
+# Golang
+export GOROOT_BOOTSTRAP=/usr/local/go-1.9.2
+export GOPATH=/home/randy/workspace/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+# Google Cloud SDK
+export PATH=$PATH:/usr/local/google-cloud-sdk/bin
+
+# Shortcuts
+export GITHUB=$GOPATH/src/github.com
+export GITLAB=$GOPATH/src/gitlab.com
+export BITBUCKET=$GOPATH/src/bitbucket.org
+
+export RND=$GITHUB/rnd
+export SYNODAY=$GITHUB/synoday
+export BRANKAS=$GOPATH/src/git.brank.as
+export BITROUPE=$GOPATH/src/git.bitroupe.com
+
