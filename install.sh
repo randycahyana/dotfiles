@@ -2,11 +2,11 @@
 
 SRC="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# link bash config
+# link shell config
 for i in $(ls $SRC/bash); do
   if [[ ! -f $i && ! -e $HOME/.$i ]]; then
     echo "Linking: $SRC/bash/$i to ~/.$i"
-    ln -s $SRC/bash/$i $HOME/.$i
+    ln -s $SRC/shell/$i $HOME/.$i
   fi
 done
 
