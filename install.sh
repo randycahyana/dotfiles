@@ -3,16 +3,23 @@
 SRC="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # link shell config
-for i in $(ls $SRC/bash); do
+for i in $(ls $SRC/shell); do
   if [[ ! -f $i && ! -e $HOME/.$i ]]; then
     echo "Linking: $SRC/bash/$i to ~/.$i"
-    ln -s $SRC/shell/$i $HOME/.$i
+    ln -sf $SRC/shell/$i $HOME/.$i
   fi
 done
 
-echo "Linking: $SRC/nvm to ~/.config/nvim"
-mkdir -p ~/.config
-ln -s $SRC/config/nvim ~/.config/nvim
+for i in $(ls $SRC/config); do
+  if [[ ! -f $i && ! -e $HOME/.$i ]]; then
+    echo "Linking: $SRC/config/$i to ~/.config/$i"
+    ln -sf $SRC/config/$i $HOME/.config/$i
+  fi
+done
 
-echo "Linking: $SRC/git/gitconfig to ~/.gitconfig"
-ln -s $SRC/git/gitconfig ~/.gitconfig
+for i in $(ls $SRC/git); do
+  if [[ ! -f $i && ! -e $HOME/.$i ]]; then
+    echo "Linking: $SRC/git/$i to ~/.$i"
+    ln -sf $SRC/git/$i $HOME/.$i
+  fi
+done

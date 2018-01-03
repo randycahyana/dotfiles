@@ -1,5 +1,6 @@
 [user]
 	name = Randy Cahyana
+    email = ranren.cahyana@gmail.com
 [core]
 	editor = nvim
 [alias]
@@ -15,4 +16,6 @@
 	default = simple
 [branch]
   autosetuprebase = always
+[includeIf "gitdir:~/workspace/go/src/git.brank.as/"]
+  path = ~/.gitconfig-work
 
