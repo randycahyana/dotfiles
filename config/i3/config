@@ -99,8 +99,6 @@ bar {
 exec --no-startup-id nitrogen --restore
 # Enpass
 exec --no-startup-id /opt/Enpass/bin/runenpass.sh
-# Touchpad indicator
-exec --no-startup-id /opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator
 # Network manager
 exec --no-startup-id nm-applet --restore
 
