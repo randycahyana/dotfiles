@@ -1,21 +1,21 @@
 [user]
 	name = Randy Cahyana
-    email = ranren.cahyana@gmail.com
+	email = ranren.cahyana@gmail.com
 [core]
 	editor = nvim
 [alias]
-    s = status
-    a = add -A .
-    c = commit
-    lg = log
+  s = status
+  a = add -A .
+  c = commit
+  lg = log
 	ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 	assume = update-index --assume-unchanged
 	unassume = update-index --no-assume-unchanged
-    flat = clone --depth 1
+  flat = clone --depth 1
 [push]
 	default = simple
 [branch]
-  autosetuprebase = always
+	autosetuprebase = always
 [includeIf "gitdir:~/workspace/go/src/git.brank.as/"]
-  path = ~/.gitconfig-work
+  path = .gitconfig-work
 
