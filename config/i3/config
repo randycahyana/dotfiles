@@ -134,13 +134,13 @@ bindsym $mod+Shift+0 move container to workspace 10
 #==================================================================
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+  bindsym j resize shrink width 10 px or 10 ppt
+  bindsym k resize grow height 10 px or 10 ppt
+  bindsym l resize shrink height 10 px or 10 ppt
+  bindsym semicolon resize grow width 10 px or 10 ppt
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -159,15 +159,15 @@ set $Locker i3lock && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id $Locker, mode "default"
-    bindsym e exec --no-startup-id i3-msg exit, mode "default"
-    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
-    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
-    bindsym r exec --no-startup-id systemctl reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
+  bindsym l exec --no-startup-id $Locker, mode "default"
+  bindsym e exec --no-startup-id i3-msg exit, mode "default"
+  bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+  bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+  bindsym r exec --no-startup-id systemctl reboot, mode "default"
+  bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
 
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 
 bindsym $mod+Shift+e mode "$mode_system"
@@ -186,3 +186,9 @@ assign [class="^Slack"] 3
 
 assign [class="^Enpass-Desktop"] 10
 	for_window [class="^Enpass-Desktop$"] focus
+
+#==================================================================
+# Input
+#==================================================================
+bindsym $mod+t exec "synclient TouchpadOff=1"
+bindsym $mod+Shift+t exec "synclient TouchpadOff=0"
