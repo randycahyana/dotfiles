@@ -184,6 +184,9 @@ assign [class="^Firefox$"] 2
 assign [class="^Slack"] 3
 	for_window [class="^Slack$"] focus
 
+assign [class="^Telegram"] 3
+	for_window [class="^Telegram$"] focus
+
 assign [class="^Enpass-Desktop"] 10
 	for_window [class="^Enpass-Desktop$"] focus
 
