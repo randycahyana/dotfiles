@@ -193,5 +193,5 @@ assign [class="^Enpass-Desktop"] 10
 #==================================================================
 # Input
 #==================================================================
-bindsym $mod+t exec "xinput --disable 12"
-bindsym $mod+Shift+t exec "xinput --enable 12"
+bindsym $mod+t exec "synclient TouchpadOff=1"
+bindsym $mod+Shift+t exec "synclient TouchpadOff=0"
