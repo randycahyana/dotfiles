@@ -101,6 +101,10 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id /opt/Enpass/bin/runenpass.sh
 # Network manager
 exec --no-startup-id nm-applet --restore
+# Firefox
+exec firefox
+# Slack
+exec slack
 
 #==================================================================
 # Workspace
