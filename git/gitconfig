@@ -32,3 +32,5 @@
 [includeIf "gitdir:~/workspace/go/src/git.brank.as/"]
     path = .gitconfig-work
 
+[http]
+    cookiefile = /home/randy/.gitcookies
