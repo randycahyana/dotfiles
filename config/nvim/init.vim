@@ -89,6 +89,7 @@ let delimitMate_expand_cr = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme= 'bubblegum'
+let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:closetag_filenames = '*.html,*.xml'
 let g:deoplete#enable_at_startup = 1
 let g:flow#qfsize = 0
