@@ -1,5 +1,5 @@
 set title number relativenumber completeopt-=preview
-set tabstop=4 shiftwidth=4 expandtab
+set tabstop=8 softtabstop=2 shiftwidth=2 noexpandtab
 set encoding=utf-8 nobomb
 set ignorecase smartcase
 set scrolloff=999
