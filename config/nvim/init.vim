@@ -3,8 +3,7 @@ set tabstop=4 shiftwidth=4 noexpandtab
 set encoding=utf-8 nobomb
 set ignorecase smartcase
 set scrolloff=999
-
-set scrolloff=40 showmode showcmd hidden wildmode=list:longest
+set showmode showcmd hidden wildmode=list:longest
 set signcolumn=yes
 
 " override higlight color
@@ -28,13 +27,11 @@ endfunction
 function! DoRemoteUpdate(arg)
  UpdateRemotePlugins
 endfunction<Paste>
-
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugins
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""
-
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -79,7 +76,6 @@ Plug 'mxw/vim-jsx', { 'for': 'jsx'}
 Plug 'ianks/vim-tsx', { 'for': 'tsx'}
 
 call plug#end()
-
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugin settings
@@ -101,9 +97,6 @@ let g:go_gocode_unimported_packages = 1
 let g:indentLine_color_gui = '#A4E57E'
 let g:indentLine_color_term = 111
 let g:indentLine_faster = 1
-let g:java_fmt_options = '--aosp'
-let g:javascript_plugin_flow = 1
-let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
 let g:sql_type_default = 'pgsql'
 let g:SuperTabDefaultCompletionType = '<c-n>'
@@ -176,5 +169,3 @@ endif
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|node_modules\|dist|lib$',
   \ }
-
-
