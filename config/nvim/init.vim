@@ -174,7 +174,7 @@ endif
 
 " ctrl-p settings
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|node_modules\|dist$',
+  \ 'dir':  '\.git$\|node_modules\|dist|lib$',
   \ }
 
 
