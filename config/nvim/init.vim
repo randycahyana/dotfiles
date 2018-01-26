@@ -122,7 +122,6 @@ let g:ycm_semantic_triggers =  {
   \   'lua' : ['.', ':'],
   \   'erlang' : [':'],
   \ }
-let g:ycm_extra_conf_globlist =['/media/src/chromium/.ycm_extra_conf.py']
 
 "---------------------------------------------------
 "
