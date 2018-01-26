@@ -152,25 +152,14 @@ au FileType go nmap <Leader>gs <Plug>(go-doc)
 " Other settings
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" strip trailing whitespace
-autocmd FileType cmake,c,cs,cpp,gradle,groovy,java,cql,sql,vcl,ice,php,javascript,css,html,perl,ruby,sh,python,gitcommit,gitconfig,git,xml,yml,yaml,markdown autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
-" override file settings
+" file settings
 autocmd FileType html,xml,ruby,sh,javascript,javascript.jsx,jsx,json,yaml,sql,vim,cmake,proto,typescript,ps1 setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 autocmd FileType gitconfig setlocal tabstop=2 shiftwidth=2 softtabstop=2 noexpandtab
-autocmd BufNewFile,BufRead *.qtpl setlocal filetype=go
 autocmd BufNewFile,BufRead *.bolt setlocal filetype=typescript
-autocmd BufNewFile,BufRead .*config,*.config,config setlocal filetype=gitconfig
-autocmd BufNewFile,BufRead *.cql setlocal filetype=cql
-autocmd BufNewFile,BufRead *.go.tpl,*.peg setlocal syntax=go
-autocmd BufNewFile,BufRead *.gradle setlocal filetype=groovy shiftwidth=2 tabstop=2 softtabstop=2 expandtab
-autocmd BufNewFile,BufRead *.groovy setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
-autocmd BufNewFile,BufRead *.thrift setlocal filetype=thrift
+autocmd BufNewFile,BufRead *.go.tpl,*.qtpl setlocal syntax=go
 
-" override settings from vim-sensible
-autocmd FileType * set noautoindent nottimeout ttimeoutlen=0
-
-" python host
+" python hosts
 if has("unix")
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
