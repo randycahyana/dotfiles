@@ -59,15 +59,12 @@ Plug 'Raimondi/delimitMate'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " Languages
 Plug 'exu/pgsql.vim', { 'for': 'sql' }
 Plug 'fatih/vim-go', { 'for': 'go' } | Plug 'zchee/deoplete-go', { 'do': 'make' }
-Plug 'jparise/vim-graphql', { 'for': 'graphql' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } | Plug 'davinche/godown-vim'
-Plug 'tikhomirov/vim-glsl', { 'for': 'glsl' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'elzr/vim-json', { 'for': 'json' } 
 Plug 'posva/vim-vue', { 'for': 'vue'}
