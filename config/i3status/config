@@ -5,7 +5,7 @@ general {
 
 order += "disk /"
 order += "wireless _first_"
-order += "ethernet enp3s0"
+order += "ethernet enp2s0"
 order += "battery 0"
 order += "volume master"
 order += "tztime pst"
@@ -17,7 +17,7 @@ wireless _first_ {
 	format_down = "W: down"
 }
 
-ethernet enp3s0 {
+ethernet enp2s0 {
 	format_up = "E: %ip (%speed)"
 	format_down = "E: down"
 }
