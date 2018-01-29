@@ -97,6 +97,8 @@ bar {
 
 # Nitrogen
 exec --no-startup-id nitrogen --restore
+# Syndaemon
+exec --no-startup id syndaemon -i 1 -d -t -K
 # Enpass
 exec --no-startup-id /opt/Enpass/bin/runenpass.sh
 # Network manager
