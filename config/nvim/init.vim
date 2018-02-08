@@ -131,11 +131,11 @@ nnoremap <Left> <Nop>
 nnoremap <Right> <Nop>
 
 " vim-go settings
-au FileType go nmap <Leader>r <Plug>(go-rename)
-au FileType go nmap <Leader>gd <Plug>(go-def-split)
-au FileType go nmap <Leader>gv <Plug>(go-def-vertical)
-au FileType go nmap <Leader>gt <Plug>(go-def-tab)
-au FileType go nmap <Leader>gs <Plug>(go-doc)
+autocmd FileType go nmap <Leader>r <Plug>(go-rename)
+autocmd FileType go nmap <Leader>gd <Plug>(go-def-split)
+autocmd FileType go nmap <Leader>gv <Plug>(go-def-vertical)
+autocmd FileType go nmap <Leader>gt <Plug>(go-def-tab)
+autocmd FileType go nmap <Leader>gs <Plug>(go-doc)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -146,7 +146,8 @@ au FileType go nmap <Leader>gs <Plug>(go-doc)
 " override file settings
 autocmd FileType html,xml,ruby,sh,javascript,javascript,jsx,json,yaml,sql,vim,cmake,proto,typescript,ps1 setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 autocmd FileType gitconfig setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-autocmd BufRead,BufNewFile *.rules setlocal tabstop=2 shiftwidth=2 softtabstop=2 noexpandtab
+autocmd BufNewFile,BufRead *.rules setlocal tabstop=2 shiftwidth=2 softtabstop=2 noexpandtab
+autocmd BufNewFile,BufRead *.ejs set filetype=html
 autocmd BufNewFile,BufRead *.bolt setlocal filetype=typescript
 autocmd BufNewFile,BufRead *.go.tpl,*.qtpl setlocal syntax=go
 
@@ -165,5 +166,5 @@ endif
 
 " ctrl-p settings
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|node_modules\|dist|lib$',
+  \ 'dir':  '\.git$\|node_modules\|dist|lib|.yarn_cache|.yarn-cache$',
   \ }
