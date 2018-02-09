@@ -1,5 +1,5 @@
 set title number relativenumber completeopt-=preview
-set tabstop=4 shiftwidth=4 noexpandtab 
+set softtabstop=2 tabstop=4 shiftwidth=4 noexpandtab 
 set encoding=utf-8 nobomb
 set ignorecase smartcase
 set scrolloff=999
@@ -53,8 +53,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemoteUpdate')}
 Plug 'ervandew/supertab'
 
 " Others
-Plug 'tmhedberg/matchit'
-Plug 'Yggdroot/indentLine'
 Plug 'Raimondi/delimitMate'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
@@ -67,7 +65,6 @@ Plug 'fatih/vim-go', { 'for': 'go' } | Plug 'zchee/deoplete-go', { 'do': 'make' 
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } | Plug 'davinche/godown-vim'
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'elzr/vim-json', { 'for': 'json' } 
-Plug 'posva/vim-vue', { 'for': 'vue'}
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript'} | Plug 'Quramy/tsuquyomi'
 Plug 'mxw/vim-jsx', { 'for': 'jsx'}
 Plug 'ianks/vim-tsx', { 'for': 'tsx'}
@@ -91,9 +88,6 @@ let g:godown_autorun = 1
 let g:godown_port = 7331
 let g:go_fmt_command = 'goimports'
 let g:go_gocode_unimported_packages = 1
-let g:indentLine_color_gui = '#A4E57E'
-let g:indentLine_color_term = 111
-let g:indentLine_faster = 1
 let g:jsx_ext_required = 0
 let g:sql_type_default = 'pgsql'
 let g:SuperTabDefaultCompletionType = '<c-n>'
@@ -144,11 +138,10 @@ autocmd FileType go nmap <Leader>gs <Plug>(go-doc)
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " override file settings
-autocmd FileType html,xml,ruby,sh,javascript,javascript,jsx,json,yaml,sql,vim,cmake,proto,typescript,ps1 setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
-autocmd FileType gitconfig setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType html,xml,ruby,sh,javascript,jsx,json,yaml,sql,vim,cmake,proto,typescript,ps1,gitconfig setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 autocmd BufNewFile,BufRead *.rules setlocal tabstop=2 shiftwidth=2 softtabstop=2 noexpandtab
 autocmd BufNewFile,BufRead *.ejs set filetype=html
-autocmd BufNewFile,BufRead *.bolt setlocal filetype=typescript
+autocmd BufNewFile,BufRead *.js,*.vue,*.bolt setlocal filetype=typescript
 autocmd BufNewFile,BufRead *.go.tpl,*.qtpl setlocal syntax=go
 
 " python hosts
