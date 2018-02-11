@@ -1,5 +1,6 @@
 # Shortcuts 
 alias vi="nvim"
+alias vim="nvim"
 alias vdiff="vimdiff"
 alias l="ls -la"
 alias dot="cd $HOME/dotfiles"

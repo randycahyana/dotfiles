@@ -29,7 +29,7 @@ bindsym $mod+e layout toggle split
 #==================================================================
 # Border style
 new_window pixel 1
-nef_float normal
+new_float normal
 
 # Hide borders
 hide_edge_borders none
