@@ -3,8 +3,8 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 # Golang
 export GOROOT_BOOTSTRAP=/usr/local/go-1.9.2
 export GOPATH=/home/randy/workspace/go
-export GOROOT=$GOPATH/src/go/bin
-export PATH=$PATH:$GOROOT:$GOPATH/bin
+export GOROOT=$GOPATH/src/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Google Cloud SDK
 export PATH=$PATH:/usr/local/google-cloud-sdk/bin
