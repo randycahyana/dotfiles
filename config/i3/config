@@ -92,6 +92,7 @@ bindsym $mod+Shift+r restart
 #==================================================================
 # dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym Print exec --no-startup-id i3-scrot
 
 exec --no-startup-id /opt/Enpass/bin/runenpass.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
