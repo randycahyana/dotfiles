@@ -184,16 +184,16 @@ bindsym $mod+9 exec --no-startup-id $locker
 #==================================================================
 # Window rules rules
 #==================================================================
-assign [class="^Google-chrome$"] 2
+assign [class="^Google-chrome$"] 3
 	for_window [class="^Google-chrome$"] focus
 
-assign [class="^Firefox$"] 2
+assign [class="^Firefox$"] 3
 	for_window [class="^Firefox$"] focus
 
-assign [class="^Slack"] 3
+assign [class="^Slack"] 4
 	for_window [class="^Slack$"] focus
 
-assign [class="^Telegram"] 3
+assign [class="^Telegram"] 4
 	for_window [class="^Telegram$"] focus
 
 assign [class="^Enpass-Desktop"] 8
