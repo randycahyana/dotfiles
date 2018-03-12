@@ -104,7 +104,6 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
-exec --no-startup-id xautolock -time 10 -locker blurlock
 
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
@@ -198,6 +197,9 @@ assign [class="^Telegram"] 4
 
 assign [class="^Pcmanfm"] 5
 	for_window [class="^Pcmanfm$"] focus
+
+assign [class="^vlc"] 7
+	for_window [class="^vlc$"] focus
 
 assign [class="^Enpass-Desktop"] 8
 	for_window [class="^Enpass-Desktop$"] focus
