@@ -104,6 +104,7 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
+exec --no-startup-id redshift-gtk
 
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
@@ -183,8 +184,11 @@ bindsym $mod+9 exec --no-startup-id $locker
 #==================================================================
 # Window rules rules
 #==================================================================
-assign [class="^Google-chrome$"] 3
-	for_window [class="^Google-chrome$"] focus
+assign [class="^Google-chrome.*$"] 2
+	for_window [class="^Google-chrome.*$"] focus
+
+assign [class="^Chromium$"] 2
+	for_window [class="^Chromium$"] focus
 
 assign [class="^Firefox$"] 3
 	for_window [class="^Firefox$"] focus
