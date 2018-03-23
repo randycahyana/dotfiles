@@ -109,7 +109,7 @@ exec --no-startup-id redshift-gtk
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
-exec slack
+exec Franz
 exec firefox
 #==================================================================
 # Workspace
@@ -193,19 +193,22 @@ assign [class="^Chromium$"] 2
 assign [class="^Firefox$"] 3
 	for_window [class="^Firefox$"] focus
 
-assign [class="^Slack"] 4
+assign [class="^Slack$"] 4
 	for_window [class="^Slack$"] focus
 
-assign [class="^Telegram"] 4
+assign [class="^Franz$"] 4
+	for_window [class="^Franz$"] focus
+
+assign [class="^Telegram$"] 4
 	for_window [class="^Telegram$"] focus
 
-assign [class="^Pcmanfm"] 5
+assign [class="^Pcmanfm$"] 5
 	for_window [class="^Pcmanfm$"] focus
 
-assign [class="^vlc"] 7
+assign [class="^vlc$"] 7
 	for_window [class="^vlc$"] focus
 
-assign [class="^Enpass-Desktop"] 8
+assign [class="^Enpass-Desktop$"] 8
 	for_window [class="^Enpass-Desktop$"] focus
 
 # Open specific applications in floating mode
