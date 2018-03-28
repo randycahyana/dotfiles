@@ -24,6 +24,6 @@ export BITBUCKET=$GOPATH/src/bitbucket.org
 
 export RND=$GITHUB/rnd
 export SYNODAY=$GITHUB/synoday
-export BRANKAS=$GOPATH/src/git.brank.as
+export BRANKAS=$GOPATH/src/brank.as
 export BITROUPE=$GOPATH/src/git.bitroupe.com
 
