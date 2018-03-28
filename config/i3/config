@@ -109,7 +109,7 @@ exec --no-startup-id redshift-gtk
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
-exec Franz
+exec Slack
 exec firefox
 #==================================================================
 # Workspace
@@ -195,9 +195,6 @@ assign [class="^Firefox$"] 3
 
 assign [class="^Slack$"] 4
 	for_window [class="^Slack$"] focus
-
-assign [class="^Franz$"] 4
-	for_window [class="^Franz$"] focus
 
 assign [class="^Telegram$"] 4
 	for_window [class="^Telegram$"] focus
