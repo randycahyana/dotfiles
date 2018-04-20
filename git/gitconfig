@@ -15,13 +15,13 @@
 	unassume = update-index --no-assume-unchanged
 	flat = clone --depth 1
 
-		# git-codereview aliases
+	# git-codereview aliases
 	change = codereview change
 	gofmt = codereview gofmt
 	mail = codereview mail
 	pending = codereview pending
 	submit = codereview submit
-	sync = codereview sync
+  sync = codereview sync
 
 [push]
 	default = simple
@@ -29,7 +29,7 @@
 [branch]
 	autosetuprebase = always
 
-[includeIf "gitdir:~/workspace/go/src/git.brank.as/"]
+[includeIf "gitdir:~/workspace/go/src/brank.as/"]
 	path = .gitconfig-work
 
 [http]
