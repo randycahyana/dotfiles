@@ -7,8 +7,11 @@
 
 [alias]
 	s = status
-	a = add -A .
+	a = add
 	c = commit
+	d = diff
+	r = reset
+	rb = rebase
 	lg = log
 	ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 	assume = update-index --assume-unchanged
