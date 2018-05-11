@@ -1,9 +1,29 @@
-# Shortcuts 
-alias vi="nvim"
-alias vim="nvim"
-alias vdiff="vimdiff"
+#!/bin/bash
+
+## gcloud
+alias gcl='gcloud'
+gclc() {
+	if [[ $# -eq 0 ]]; then
+		gcl config configurations list
+	else
+		gcl config configurations activate $@
+	fi
+}
+
+## kubectl
+alias kc='kubectl'
+kcc() {
+	if [[ $# -eq 0 ]]; then
+		kc config get-contexts
+	else
+		kc config use-context $@
+	fi
+}
+
+# others
+alias v="nvim"
 alias l="ls -la"
 alias dot="cd $HOME/dotfiles"
-alias dc="docker-compose"
-alias chromeless="docker run -d -p 9222:9222 --name chrome-headless knqz/chrome-headless"
 alias gldoc="godoc -http=:6060"
+alias dc="docker-compose"
+
