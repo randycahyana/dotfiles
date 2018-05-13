@@ -12,6 +12,8 @@
 	d = diff
 	r = reset
 	rb = rebase
+	co = checkout
+	cp = cherry-pick
 	lg = log
 	ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 	assume = update-index --assume-unchanged
