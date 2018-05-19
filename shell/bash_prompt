@@ -1,9 +1,3 @@
-# Git aware shell prompt
-# This prompt heavily inspired by :
-#
-# https://github.com/mathiasbynens/dotfiles/blob/master/.bash_prompt
-# https://github.com/paulirish/dotfiles/blob/master/.bash_prompt
-
 set_prompts() {
 
     bold=$(tput bold)
@@ -72,11 +66,7 @@ set_prompts() {
 
     PS1="\[\033]0;\w\007\]";
     PS1+="\n\[$bold\]"
-    PS1+="\[$yellow\][\u "
-    PS1+="\[$white\]at "
-    PS1+="\[$yellow\]\h] "
-    PS1+="\[$white\]: "
-    PS1+="\[$orange\][\W]"
+    PS1+="[\u-\h]:[\W]"
     PS1+="\$(prompt_git \"$white on $red\" \"$purple\")"
     PS1+="\n"
     PS1+="\[$reset$white\]\\$ \[$reset\]"
