@@ -114,7 +114,32 @@ let g:ycm_semantic_triggers =  {
 "---------------------------------------------------
 nnoremap ; :
 
-" Disable arrow keys
+" dvorak key maps
+
+nnoremap d h
+vnoremap d h
+nnoremap h j
+vnoremap h j
+nnoremap t k
+vnoremap t k
+nnoremap n l
+vnoremap n l
+
+" remap d
+nnoremap e d
+vnoremap e d
+nnoremap ee dd
+vnoremap ee dd
+nnoremap EE DD
+vnoremap EE DD
+
+" unmap j
+nnoremap j <Nop>
+vnoremap j <Nop>
+nnoremap J <Nop>
+vnoremap J <Nop>
+
+" disable arrow keys
 vnoremap <Up> <Nop>
 vnoremap <Down> <Nop>
 vnoremap <Left> <Nop>

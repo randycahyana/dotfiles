@@ -7,10 +7,10 @@ floating_modifier $mod
 #==================================================================
 # Movement keys
 #==================================================================
-set $up j
-set $down k
-set $left h
-set $right l
+set $up d
+set $down h
+set $left t
+set $right n
 
 #==================================================================
 # Layout
@@ -91,7 +91,7 @@ bindsym $mod+Shift+r restart
 # Start-up program
 #==================================================================
 # dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+r exec --no-startup-id i3-dmenu-desktop
 bindsym Print exec --no-startup-id i3-scrot
 
 exec --no-startup-id /opt/Enpass/bin/runenpass.sh
@@ -135,22 +135,6 @@ bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
-
-#==================================================================
-# Modes
-#==================================================================
-# resize window (you can also use the mouse for that)
-mode "resize" {
-  bindsym j resize shrink width 10 px or 10 ppt
-  bindsym k resize grow height 10 px or 10 ppt
-  bindsym l resize shrink height 10 px or 10 ppt
-  bindsym semicolon resize grow width 10 px or 10 ppt
-
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-}
-
-bindsym $mod+r mode "resize"
 
 #==================================================================
 # Audio
@@ -218,12 +202,6 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="Skype"] floating enable border normal
 for_window [class="Thus"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
-
-#==================================================================
-# Input
-#==================================================================
-bindsym $mod+t exec "synclient TouchpadOff=1"
-bindsym $mod+Shift+t exec "synclient TouchpadOff=0"
 
 #==================================================================
 # i3-gaps
