@@ -79,7 +79,7 @@ new_window 1pixel
 font pango:monospace 8
 
 # Terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec terminator
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
