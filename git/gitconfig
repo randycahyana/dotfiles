@@ -16,7 +16,7 @@
 	cp = cherry-pick
 	lg = log
 	ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-	gd = git diff-tree --no-commit-id --name-only -r
+	dt = diff-tree --no-commit-id --name-only -r
 	assume = update-index --assume-unchanged
 	unassume = update-index --no-assume-unchanged
 	flat = clone --depth 1
