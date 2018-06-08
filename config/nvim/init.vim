@@ -6,10 +6,6 @@ set scrolloff=999
 set showmode showcmd hidden wildmode=list:longest
 set signcolumn=yes
 
-" override higlight color
-highlight Search     ctermfg=Black	ctermbg=Red	cterm=NONE
-highlight Cursor     ctermfg=Black	ctermbg=Red	cterm=bold
-
 syntax on
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -41,6 +37,7 @@ endif
 call plug#begin('~/.nvim/plugged')
 
 " UI
+Plug 'fxn/vim-monochrome'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
@@ -107,6 +104,9 @@ let g:ycm_semantic_triggers =  {
   \   'erlang' : [':'],
   \ }
 
+let g:monochrome_italic_comments = 1
+colorscheme monochrome
+
 "---------------------------------------------------
 "
 " Keys remap
@@ -148,7 +148,6 @@ autocmd BufNewFile,BufRead *.go.tpl,*.qtpl setlocal syntax=go
 if has("unix")
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
-    let g:python2_host_prog = '/opt/local/bin/python2.7'
     let g:python3_host_prog = '/opt/local/bin/python3.4'
   if s:uname == "Linux\n"
     let g:python2_host_prog = '/usr/bin/python'

@@ -1,28 +1,27 @@
 [global_config]
-  title_inactive_bg_color = "#2d2d2d"
-  title_transmit_bg_color = "#757575"
-  title_inactive_fg_color = "#afafaf"
-  handle_size = 1
   borderless = True
+  handle_size = 1
+  title_inactive_bg_color = "#2d2d2d"
+  title_inactive_fg_color = "#afafaf"
+  title_transmit_bg_color = "#757575"
 [keybindings]
-  toggle_zoom = <Ctrl>Return
   copy = <Control><Shift>c
   paste = <Control><Shift>v
-[profiles]
-  [[default]]
-    scrollbar_position = hidden
-    tab_position = hidden
-    palette = "#000000:#f92672:#6cc72c:#fe9720:#5f91ef:#9358fe:#36af90:#8c8c8c:#4c4c4c:#ff80f4:#a7e22e:#ffee99:#5fd9ef:#ae82fe:#66efd5:#c7cece"
-    background_darkness = 0.8
-	show_titlebar = False
-    cursor_color = "#d8d8d8"
-    foreground_color = "#ffffff"
-    icon_bell = False
-    background_color = "#2e3436"
-    allow_bold = False
+  toggle_zoom = <Ctrl>Return
 [layouts]
   [[default]]
     [[[window0]]]
-      type = Window
       parent = ""
+      type = Window
 [plugins]
+[profiles]
+  [[default]]
+    allow_bold = False
+    background_color = "#2e3436"
+    background_darkness = 0.8
+    cursor_color = "#d8d8d8"
+    foreground_color = "#ffffff"
+    icon_bell = False
+    palette = "#000000:#f92672:#6cc72c:#fe9720:#5f91ef:#9358fe:#36af90:#8c8c8c:#4c4c4c:#ff80f4:#a7e22e:#ffee99:#5fd9ef:#ae82fe:#66efd5:#c7cece"
+    scrollbar_position = hidden
+    show_titlebar = False
