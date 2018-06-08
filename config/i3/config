@@ -61,10 +61,6 @@ bindsym $mod+plus focus mode_toggle
 # Toggle mode between tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# Scratchpad
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+space scratchpad show
-
 # Kill focused window
 bindsym $mod+Shift+q kill
 
@@ -90,10 +86,6 @@ bindsym $mod+Shift+r restart
 #==================================================================
 # Start-up program
 #==================================================================
-# dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym Print exec --no-startup-id i3-scrot
-
 exec --no-startup-id /opt/Enpass/bin/runenpass.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
@@ -105,12 +97,13 @@ exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
+exec --no-startup-id albert
 
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
-exec Slack
-exec firefox
+bindsym $mod+space exec --no-startup-id albert show
+bindsym Print exec --no-startup-id i3-scrot
 #==================================================================
 # Workspace
 #==================================================================
@@ -167,12 +160,11 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 #==================================================================
 set $Locker blurlock && sleep 1
 
-set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
   bindsym l exec --no-startup-id $Locker, mode "default"
   bindsym e exec --no-startup-id i3-msg exit, mode "default"
   bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
-  bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
   bindsym r exec --no-startup-id systemctl reboot, mode "default"
   bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
 
