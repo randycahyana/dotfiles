@@ -1,7 +1,7 @@
 export EDITOR=nvim
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 
-# Golang
+# Go
 export GOROOT_BOOTSTRAP=/usr/local/go-1.9.2
 export GOPATH=/home/randy/workspace/go
 export GOROOT=$GOPATH/src/go
@@ -11,7 +11,7 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH=$PATH:/usr/local/google-cloud-sdk/bin
 
 # Yarn
-export PATH=$PATH:/home/randy/.yarn/bin
+export PATH=$PATH:/home/randy/.config/yarn/global/bin
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
