@@ -5,6 +5,7 @@ set ignorecase smartcase
 set scrolloff=999
 set showmode showcmd hidden wildmode=list:longest
 set signcolumn=yes
+set background=dark
 
 syntax on
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -37,7 +38,7 @@ endif
 call plug#begin('~/.nvim/plugged')
 
 " UI
-Plug 'fxn/vim-monochrome'
+Plug 'owickstrom/vim-colors-paramount'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
@@ -104,8 +105,7 @@ let g:ycm_semantic_triggers =  {
   \   'erlang' : [':'],
   \ }
 
-let g:monochrome_italic_comments = 1
-colorscheme monochrome
+colorscheme paramount
 
 "---------------------------------------------------
 "
