@@ -1,0 +1,34 @@
+Apollo Engine Proxy End User License Agreement
+
+This End User License Agreement (this "License") governs the terms and conditions of the use of the executable software that accompanies this Agreement (the "Software"), provided by Meteor Development Group, Inc., ("we", "us" or "our"). 
+
+The use of the Software is expressly subject to this License. Use of the Software confirms acceptance of, and agreement to be bound by, this License.
+
+1. Limited Right to Use.  Subject all of the terms of this License, we hereby grant to you a limited, non-exclusive, non-transferable, non-sublicenseable right to copy and use the Software, including by integrating the Software into your own software application,  solely in conjunction with our hosted service at https://apollodata.com.  You agree to access and utilize the Software only through the interfaces we identify in the Software?s documentation. 
+
+You acknowledge that the Software will be limited in its functionality (e.g., a monthly transaction limit) unless and until you enter into an agreement with us regarding the use of the Software and our hosted service.  
+
+Your rights granted above shall terminate automatically without notice if you breach this License.
+
+2. Ownership.  You agree that the Software and all intellectual property rights in the Software are owned by us and/or our suppliers. You agree not to decompile or reverse engineer any of the Software, except to the extent permitted by applicable law.  You acknowledge that we may verify the license and activation status of a copy of the Software when that copy of the Software interacts with our hosted service. You shall not modify or remove any copyright or other notices contained in or displayed on any the Software. We reserve all rights not specifically granted above.  This License does not address any third-party or free or open source software separately licensed to you, which is subject to the separate licenses governing its use and distribution.
+
+3. DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY.  
+TO THE MAXIMUM EXTENT ALLOWED BY APPLICABLE LAW, WE HEREBY DISCLAIM ALL EXPRESS OR IMPLIED WARRANTIES, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, SATISFACTORY QUALITY AND NON-INFRINGEMENT.  YOU ARE SOLELY RESPONSIBLE FOR DETERMINING WHETHER THE SOFTWARE MEETS YOUR NEEDS AND IS COMPATIBLE WITH AND OPERATES PROPERLY IN YOUR DESIRED ENVIRONMENT.
+
+TO THE MAXIMUM EXTENT ALLOWED BY APPLICABLE LAW, IN NO EVENT SHALL WE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, SAVINGS OR PROFITS; OR BUSINESS INTERRUPTION) ARISING IN ANY WAY IN CONNECTION WITH THE SOFTWARE OR THIS LICENSE. OUR ENTIRE LIABILITY UNDER THIS LICENSE SHALL NOT EXCEED THE TOTAL FEES PAID, IF ANY, BY YOU FOR THE USE OF THE SOFTWARE OR OUR HOSTED SERVICE IN THE TWELVE (12) MONTHS PRIOR TO THE EVENT GIVING RISE TO LIABILITY. 
+
+4. General.  
+
+You agree that your use of the Software and communications with us (including all communications between the Software and our hosted service) are subject to our Privacy Policy and our Acceptable Use Policy as in effect from time to time, which are available at https://www.meteor.com/policy.  
+
+The laws of the State of California, U.S.A., excluding its conflicts of law rules, govern this License and your use of the Software.  The UN Convention on Contracts for the International Sale of Goods is disclaimed.  You agree that exclusive jurisdiction for any claim or dispute arising from this License shall be in the federal and state courts located in the City and County of San Francisco, California, U.S.A. 
+
+We may change this Agreement by posting a revised version on our affected websites and/or by otherwise sending you notice.  We suggest that you regularly review our websites to learn about any changes. By continuing to use the Software after such changes have been posted or sent to you means that you agree to such changes; however, you acknowledge that to successfully manage and/or coordinate software development activities with respect to changes to the Software, we decline to make any commitments of any kind regarding the presence of any particular features in any future changes, at least until after successfully operating software meeting or exceeding our company quality standards for deployable software exists and has been proven to company management to be able to successfully operate if it were deployed, if not later, such as, at deployment thereof. We also may at any time modify or discontinue any portion of the Software without notice.  If you do not agree to such changes, you may stop all use of the Software.
+
+If any provision of this License is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall be enforced. Our failure to act with respect to a breach of this License by you or others does not waive our right to act with respect to subsequent or similar breaches. This License, together with the documents referenced herein, constitutes the entire agreement between the parties relating to the subject matter of this License. 
+
+Meteor Development Group 
+140 10th Street 
+San Francisco, CA 94103
+Last Revised: September 12, 2018
+
