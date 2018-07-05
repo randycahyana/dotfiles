@@ -1,3 +1,5 @@
 .netrwhist
 ycm_build
+
 config/yarn/global/node_modules/
+config/albert/core.db
