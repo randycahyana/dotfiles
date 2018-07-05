@@ -1,5 +1,5 @@
 export EDITOR=nvim
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:~/.local/bin
 
 # Go
 export GOROOT_BOOTSTRAP=/usr/local/go-1.9.2
