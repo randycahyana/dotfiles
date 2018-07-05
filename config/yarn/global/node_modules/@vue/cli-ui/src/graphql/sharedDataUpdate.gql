@@ -1,7 +1,0 @@
-#import "./sharedDataFragment.gql"
-
-mutation sharedDataUpdate ($id: ID!, $value: JSON!) {
-  sharedDataUpdate (id: $id, value: $value) {
-    ...sharedData
-  }
-}
