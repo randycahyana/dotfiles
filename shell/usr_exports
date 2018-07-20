@@ -1,5 +1,6 @@
 export EDITOR=nvim
 export GDRIVE=$HOME/Documents/gdrive
+export DATA=$HOME/data
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:~/.local/bin:/usr/bin/vendor_perl
 
 # Go
