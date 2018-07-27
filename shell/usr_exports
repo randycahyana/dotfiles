@@ -1,7 +1,7 @@
 export EDITOR=nvim
 export GDRIVE=$HOME/Documents/gdrive
 export DATA=$HOME/data
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:~/.local/bin:/usr/bin/vendor_perl
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:~/.local/bin:/usr/bin/vendor_perl:$HOME/.local/headless_shell
 
 # Go
 export GOROOT_BOOTSTRAP=/usr/local/go-1.9.2
