@@ -96,7 +96,6 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
-exec --no-startup-id redshift-gtk
 
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
