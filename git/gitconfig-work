@@ -1,2 +1,5 @@
 [user] 
     email = randy.cahyana@brank.as
+
+[http "https://gitlab.bri.co.id"]
+	sslVerify=false

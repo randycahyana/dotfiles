@@ -1,42 +1,45 @@
 [user]
-	name = Randy Cahyana
-	email = ranren.cahyana@gmail.com
+  name = Randy Cahyana
+  email = ranren.cahyana@gmail.com
 
 [core]
-	editor = nvim
+  editor = nvim
 
 [alias]
-	s = status
-	a = add
-	c = commit
-	d = diff
-	r = reset
-	rb = rebase
-	co = checkout
-	cp = cherry-pick
-	lg = log
-	ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-	dt = diff-tree --no-commit-id --name-only -r
-	assume = update-index --assume-unchanged
-	unassume = update-index --no-assume-unchanged
-	flat = clone --depth 1
+  s = status
+  a = add
+  c = commit
+  d = diff
+  r = reset
+  rb = rebase
+  co = checkout
+  cp = cherry-pick
+  lg = log
+  ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  dt = diff-tree --no-commit-id --name-only -r
+  assume = update-index --assume-unchanged
+  unassume = update-index --no-assume-unchanged
+  flat = clone --depth 1
 
-	# git-codereview aliases
-	change = codereview change
-	gofmt = codereview gofmt
-	mail = codereview mail
-	pending = codereview pending
-	submit = codereview submit
-	sync = codereview sync
+  # git-codereview aliases
+  change = codereview change
+  gofmt = codereview gofmt
+  mail = codereview mail
+  pending = codereview pending
+  submit = codereview submit
+  sync = codereview sync
 
 [push]
-	default = simple
+  default = simple
 
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 
 [includeIf "gitdir:~/workspace/go/src/brank.as/"]
-	path = .gitconfig-work
+  path = .gitconfig-work
+
+[includeIf "gitdir:~/workspace/go/src/gitlab.bri.co.id/"]
+  path = .gitconfig-work
 
 [http]
-	cookiefile = /home/randy/.gitcookies
+  cookiefile = /home/randy/.gitcookies
