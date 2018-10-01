@@ -32,3 +32,6 @@ export BRANKAS=$GOPATH/src/brank.as
 export BITROUPE=$GOPATH/src/git.bitroupe.com
 export SPICY=$GITHUB/spicynoodle
 
+# BRI
+export PROXY_IP=131.100.55.80
+export PROXY_PORT=8080
