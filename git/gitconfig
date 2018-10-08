@@ -39,7 +39,7 @@
   path = .gitconfig-work
 
 [includeIf "gitdir:~/workspace/go/src/gitlab.bri.co.id/"]
-  path = .gitconfig-work
+  path = .gitconfig-work-bri
 
 [http]
   cookiefile = /home/randy/.gitcookies
