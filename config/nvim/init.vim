@@ -42,7 +42,6 @@ Plug 'owickstrom/vim-colors-paramount'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim'
 
 " Code completion
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM'), 'for': ['c', 'cpp', 'objc', 'objcpp'] } | Plug 'ervandew/supertab' | Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
@@ -155,8 +154,3 @@ if has("unix")
   endif
 endif
 endif
-
-" ctrl-p settings
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|node_modules\|dist|lib|.yarn_cache|.yarn-cache$',
-  \ }
