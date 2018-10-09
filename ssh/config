@@ -1,0 +1,21 @@
+ForwardAgent yes
+
+Host box01
+	HostName box.rndir.cc
+	User root
+
+Host drone01
+	Hostname drone01
+	User root
+
+Host k8s01
+	Hostname k8s01
+	User administrator
+
+Host spicy01
+	Hostname 13.229.139.125
+	User ubuntu
+
+Host dev01
+	hostname 13.250.109.172
+	User ubuntu
