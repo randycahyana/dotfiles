@@ -1,4 +1,5 @@
 ForwardAgent yes
+AddKeysToAgent yes
 
 Host box01
 	HostName box.rndir.cc
@@ -18,4 +19,9 @@ Host spicy01
 
 Host dev01
 	hostname 13.250.109.172
-	User ubuntu
+	User randy
+
+Host bridev
+	hostname 172.18.133.254
+	User administrator
+
