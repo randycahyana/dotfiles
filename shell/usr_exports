@@ -20,11 +20,13 @@ export NVM_DIR="$HOME/.nvm"
 export GITHUB=$GOPATH/src/github.com
 export GITLAB=$GOPATH/src/gitlab.com
 export BITBUCKET=$GOPATH/src/bitbucket.org
-export BRI=$GOPATH/src/gitlab.bri.co.id
 
 export RND=$GITHUB/rnd
 export RNDIR=$GITHUB/rndir
-export SYNODAY=$GITHUB/synoday
-export BRANKAS=$GOPATH/src/brank.as
+
 export BITROUPE=$GOPATH/src/git.bitroupe.com
 export SPICY=$GITHUB/spicynoodle
+
+export BRANKAS=$GOPATH/src/brank.as
+export BRI=$GOPATH/src/gitlab.bri.co.id
+
