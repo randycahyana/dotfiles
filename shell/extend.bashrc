@@ -15,8 +15,5 @@ for file in "${dotfiles[@]}"; do
 done
 unset file
 
-# enable z
-[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
-
 # run keychain
 eval $(keychain --eval --noask --quiet id_ed25519)
