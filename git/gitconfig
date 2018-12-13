@@ -35,7 +35,7 @@
 [branch]
   autosetuprebase = always
 
-[includeIf "gitdir:~/workspace/go/src/brank.as/"]
+[includeIf "gitdir:~/workspace/brank.as/"]
   path = .gitconfig-work
 
 [includeIf "gitdir:~/workspace/go/src/gitlab.bri.co.id/"]
