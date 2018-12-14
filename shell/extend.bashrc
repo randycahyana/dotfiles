@@ -17,3 +17,6 @@ unset file
 
 # run keychain
 eval $(keychain --eval --noask --quiet id_ed25519)
+
+# keyboard options
+setxkbmap -option caps:escape

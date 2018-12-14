@@ -24,6 +24,7 @@ kcc() {
 }
 
 # others
+alias vim="nvim"
 alias l="ls -la"
 alias dot="cd $HOME/dotfiles"
 alias gldoc="godoc -http=:6060"

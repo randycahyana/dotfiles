@@ -3,9 +3,9 @@ export GDRIVE=$HOME/Documents/gdrive
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:~/.local/bin:/usr/bin/vendor_perl:$HOME/.local/headless_shell:/bin
 
 # Go
-export GOROOT_BOOTSTRAP=/usr/local/go1.9.4
+export GOROOT_BOOTSTRAP=/usr/local/go1.9.5
 export GOPATH=/home/randy/workspace
-export GOROOT=/home/randy/go
+export GOROOT=/home/randy/workspace/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Google Cloud SDK
