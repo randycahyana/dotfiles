@@ -1,6 +1,6 @@
 export EDITOR=vim
 export GDRIVE=$HOME/Documents/gdrive
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:~/.local/bin:/usr/bin/vendor_perl:$HOME/.local/headless_shell:/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:~/.local/bin:/usr/bin/vendor_perl:$HOME/.local/headless_shell:/bin:/snap/bin
 
 # Go
 export GOROOT_BOOTSTRAP=/usr/local/go1.9.5
