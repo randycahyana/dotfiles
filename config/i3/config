@@ -1,0 +1,263 @@
+#==================================================================
+# Modifier keys
+#==================================================================
+set $mod Mod4
+floating_modifier $mod
+
+#==================================================================
+# Movement keys
+#==================================================================
+set $up j
+set $down k
+set $left h
+set $right l
+
+#==================================================================
+# Layout
+#==================================================================
+# Split orientation
+bindsym $mod+g split h
+bindsym $mod+v split v
+
+# Toggle layout
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+#==================================================================
+# Window
+#==================================================================
+# Border style
+new_window pixel 1
+new_float normal
+
+# Hide borders
+hide_edge_borders none
+
+# Change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# Move focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+bindsym $mod+b workspace back_and_forth
+bindsym $mod+Shift+b move container to workspace back_and_forth
+
+# Move to urgent window
+bindsym $mod+x [urgent=latest] focus
+
+# Fullscreen mode
+bindsym $mod+f fullscreen toggle
+
+# Toggle focus between tiling / floating window
+bindsym $mod+plus focus mode_toggle
+
+# Toggle mode between tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Disable title bar
+for_window [class="^.*"] border pixel 1
+new_window 1pixel
+
+#==================================================================
+# i3
+#==================================================================
+# Font
+font pango:monospace 8
+
+# Terminal
+bindsym $mod+Return exec tilix
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+#==================================================================
+# Start-up program
+#==================================================================
+
+exec --no-startup-id gnome-settings-daemon
+
+# exec --no-startup-id mailspring
+exec --no-startup-id pulseaudio
+exec --no-startup-id pa-applet
+#exec --no-startup-id blueman-applet
+exec --no-startup-id nm-applet
+
+bindsym $mod+space exec "rofi -show-icons -modi combi -show combi -combi-modi run,drun"
+
+#==================================================================
+# Workspace
+#==================================================================
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+
+#==================================================================
+# Modes
+#==================================================================
+mode "resize" {
+  bindsym j resize shrink width 10 px or 10 ppt
+  bindsym k resize grow height 10 px or 10 ppt
+  bindsym l resize shrink height 10 px or 10 ppt
+  bindsym semicolon resize grow width 10 px or 10 ppt
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+#==================================================================
+# Audio
+#==================================================================
+
+bindsym $mod+Ctrl+m exec pavucontrol
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+
+#==================================================================
+# Power
+#==================================================================
+set $Locker i3lock-fancy && sleep 1
+
+set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+  bindsym l exec --no-startup-id $Locker, mode "default"
+  bindsym e exec --no-startup-id i3-msg exit, mode "default"
+  bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+  bindsym r exec --no-startup-id systemctl reboot, mode "default"
+  bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+Shift+e mode "$mode_system"
+bindsym $mod+9 exec --no-startup-id $locker
+
+#==================================================================
+# Window rules rules
+#==================================================================
+assign [class="^Google-chrome.*$"] 2
+	for_window [class="^Google-chrome.*$"] focus
+
+assign [class="^Chromium$"] 2
+	for_window [class="^Chromium$"] focus
+
+assign [class="^Firefox$"] 3
+	for_window [class="^Firefox$"] focus
+
+assign [class="^Slack$"] 4
+	for_window [class="^Slack$"] focus
+
+assign [class="^Pcmanfm$"] 5
+	for_window [class="^Pcmanfm$"] focus
+
+assign [class="^Mailspring$"] 8
+	for_window [class="^Mailspring$"] focus
+
+# Open specific applications in floating mode
+for_window [title="alsamixer"] floating enable border pixel 1
+for_window [class="GParted"] floating enable border normal
+for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Skype"] floating enable border normal
+for_window [class="(?i)virtualbox"] floating enable border normal
+
+#==================================================================
+# Input
+#==================================================================
+bindsym $mod+t exec "synclient TouchpadOff=1"
+bindsym $mod+Shift+t exec "synclient TouchpadOff=0"
+
+#==================================================================
+# themes
+#==================================================================
+set_from_resource $term_background background
+set_from_resource $term_foreground foreground
+set_from_resource $term_color0     color0
+set_from_resource $term_color1     color1
+set_from_resource $term_color2     color2
+set_from_resource $term_color3     color3
+set_from_resource $term_color4     color4
+set_from_resource $term_color5     color5
+set_from_resource $term_color6     color6
+set_from_resource $term_color7     color7
+set_from_resource $term_color8     color8
+set_from_resource $term_color9     color9
+set_from_resource $term_color10    color10
+set_from_resource $term_color11    color11
+set_from_resource $term_color12    color12
+set_from_resource $term_color13    color13
+set_from_resource $term_color14    color14
+set_from_resource $term_color15    color15
+
+# Start i3bar to display a workspace bar (plus the system information i3status if available)
+bar {
+	status_command i3status
+	position top
+
+	#tray_output primary
+	#tray_output eDP1
+
+	bindsym button4 nop
+	bindsym button5 nop
+	font xft:Noto Sans 10.5
+	strip_workspace_numbers yes
+
+    colors {
+        background #222222
+        statusline #F9FAF9
+        separator  #454947
+
+		#                  border  backgr. text
+        focused_workspace  #F9FAF9 #16a085 #292F34
+        active_workspace   #595B5B #353836 #FDF6E3
+        inactive_workspace #595B5B #283339 #EEE8D5
+        binding_mode       #16a085 #2C2C2C #F9FAF9
+        urgent_workspace   #16a085 #FDF6E3 #E5201D
+    }
+}
+
+# hide/unhide i3status bar
+bindsym $mod+m bar mode toggle
+
+# Theme colors
+# class                   border  backgr. text    indic.   child_border
+  client.focused          #556064 #556064 #80FFF9 #FDF6E3
+  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
+  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
+  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+
+  client.background       #2B2C2B
