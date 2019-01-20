@@ -38,9 +38,6 @@ endif
 call plug#begin('~/.nvim/plugged')
 
 " UI
-Plug 'owickstrom/vim-colors-paramount'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 
 " Code completion
@@ -73,10 +70,6 @@ call plug#end()
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""
 let delimitMate_expand_cr = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_theme= 'monochrome'
-let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:closetag_filenames = '*.html,*.xml'
 let g:deoplete#enable_at_startup = 1
 let g:flow#qfsize = 0
@@ -103,8 +96,6 @@ let g:ycm_semantic_triggers =  {
   \   'lua' : ['.', ':'],
   \   'erlang' : [':'],
   \ }
-
-colorscheme paramount
 
 "---------------------------------------------------
 "
@@ -142,15 +133,3 @@ autocmd BufNewFile,BufRead *.rules setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufNewFile,BufRead *.ejs set filetype=html
 autocmd BufNewFile,BufRead *.js,*.vue,*.bolt setlocal filetype=typescript
 autocmd BufNewFile,BufRead *.go.tpl,*.qtpl setlocal syntax=go
-
-" python hosts
-if has("unix")
-  let s:uname = system("uname")
-  if s:uname == "Darwin\n"
-    let g:python3_host_prog = '/opt/local/bin/python3.4'
-  if s:uname == "Linux\n"
-    let g:python2_host_prog = '/usr/bin/python'
-    let g:python3_host_prog = '/usr/bin/python3'
-  endif
-endif
-endif

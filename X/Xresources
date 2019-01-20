@@ -1,0 +1,137 @@
+!!*foreground: #00cc00
+!!*foreground_bold: #a8a19f
+!!*cursor: #a8a19f
+!!*background:       #1b1918
+
+! special
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
+
+! black
+*.color0:       #1d1f21
+*.color8:       #969896
+
+! red
+*.color1:       #cc342b
+*.color9:       #cc342b
+
+! green
+*.color2:       #198844
+*.color10:      #198844
+
+! yellow
+*.color3:       #fba922
+*.color11:      #fba922
+
+! blue
+*.color4:       #3971ed
+*.color12:      #3971ed
+
+! magenta
+*.color5:       #a36ac7
+*.color13:      #a36ac7
+
+! cyan
+*.color6:       #3971ed
+*.color14:      #3971ed
+
+! white
+*.color7:       #c5c8c6
+*.color15:      #ffffff
+
+
+!! special
+!*.foreground:   #e6e1dc
+!*.background:   #2b2b2b
+!*.cursorColor:  #e6e1dc
+!
+!! black
+!*.color0:       #2b2b2b
+!*.color8:       #5a647e
+!
+!! red
+!*.color1:       #da4939
+!*.color9:       #da4939
+!
+!! green
+!*.color2:       #a5c261
+!*.color10:      #a5c261
+!
+!! yellow
+!*.color3:       #ffc66d
+!*.color11:      #ffc66d
+!
+!! blue
+!*.color4:       #6d9cbe
+!*.color12:      #6d9cbe
+!
+!! magenta
+!*.color5:       #b6b3eb
+!*.color13:      #b6b3eb
+!
+!! cyan
+!*.color6:       #519f50
+!*.color14:      #519f50
+!
+!! white
+!*.color7:       #e6e1dc
+!*.color15:      #f9f7f3
+
+
+!! black
+!*color0: #1b1918
+!*color8: #766e6b
+!!! red
+!*color1: #f22c40
+!*color9: #f22c40
+!!! green
+!*color2: #5ab738
+!*color10: #5ab738
+!!! yellow
+!*color3: #d5911a
+!*color11: #d5911a
+!!! blue
+!*color4: #407ee7
+!*color12: #407ee7
+!!! magenta
+!*color5: #6666ea
+!*color13: #6666ea
+!!! cyan
+!*color6: #00ad9c
+!*color14: #00ad9c
+!!! white
+!*color7: #a8a19f 
+!*color15: #f1efee
+
+URxvt.intensityStyles:	false
+
+URxvt.depth:		32
+URxvt.font: 		xft:monospace:size=12
+URxvt.scrollBar:	false
+URxvt.cursorColor:	white
+
+!! Extensions
+URxvt.perl-ext-common:	default,matcher,resize-font,keyboard-select
+URxvt.colorUL:			#4682B4
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.resize-font.smaller:	C-Down
+URxvt.resize-font.bigger:	C-Up
+!! Matcher
+URxvt.url-launcher: 	/usr/bin/xdg-open
+URxvt.matcher.button:	1
+
+rofi.color-enabled:	true
+rofi.color-window:	#000, #000, #000
+rofi.color-normal:	#111, #819396, #222, #008ed4, #ffffff
+rofi.color-active:	#002b37, #008ed4, #003643, #008ed4, #66c6ff
+rofi.color-urgent:	#002b37, #da4281, #003643, #008ed4, #890661
+
+rofi.fake-transparency:	true
+rofi.lines:		3
+rofi.bw:		0
+rofi.opacity:		"10"
+rofi.hide-scrollbar:	true
+rofi.width:		30

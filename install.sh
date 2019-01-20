@@ -29,3 +29,10 @@ for i in $(ls $SRC/git); do
     ln -svf $SRC/git/$i $HOME/.$i
   fi
 done
+
+# X config
+for i in $(ls $SRC/X); do
+  if [[ ! -f $i && ! -e $HOME/.$i ]]; then
+    ln -svf $SRC/X/$i $HOME/.$i
+  fi
+done
