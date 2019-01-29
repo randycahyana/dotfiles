@@ -3,9 +3,6 @@ export EDITOR=vim
 export FILE=ranger
 export BROWER=firefox
 
-export GDRIVE=$HOME/Documents/gdrive
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
-
 # Go
 export GOROOT_BOOTSTRAP=/usr/local/go1.9.5
 export GOPATH=/home/randy/workspace
