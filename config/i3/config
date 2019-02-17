@@ -92,7 +92,6 @@ bindsym $mod+p exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Documen
 # Start-up program
 #==================================================================
 exec --no-startup-id start-pulseaudio-x11
-exec --no-startup-id pasystray
 exec --no-startup-id nm-applet
 
 bindsym $mod+space exec "rofi -show-icons -modi combi -show combi -combi-modi run,drun"
@@ -188,37 +187,35 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="Skype"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 
-#=#==================================================================
+#==================================================================
 # themes
 #==================================================================
 # Set Xresources colors:
-set_from_resource $darkblack	color0  #000000
-set_from_resource $black	color8  #000000
-set_from_resource $darkred	color1  #000000
-set_from_resource $red		color9  #000000
-set_from_resource $darkgreen	color2  #000000
-set_from_resource $green	color10 #000000
-set_from_resource $darkyellow	color3  #000000
-set_from_resource $yellow	color11 #000000
-set_from_resource $darkblue	color4  #000000
-set_from_resource $blue		color12 #000000
-set_from_resource $darkmagenta	color5  #000000
-set_from_resource $magenta	color13 #000000
-set_from_resource $darkcyan	color6  #000000
-set_from_resource $cyan		color14 #000000
-set_from_resource $darkwhite	color7  #000000
-set_from_resource $white	color15 #000000
-set $transparent #00000000
+set_from_resource         $darkblack        color0
+set_from_resource         $black            color8
+set_from_resource         $darkred          color1
+set_from_resource         $red              color9
+set_from_resource         $darkgreen        color2
+set_from_resource         $green            color10
+set_from_resource         $darkyellow       color3
+set_from_resource         $yellow           color11
+set_from_resource         $darkblue         color4
+set_from_resource         $blue             color12
+set_from_resource         $darkmagenta      color5
+set_from_resource         $magenta			color13
+set_from_resource         $darkcyan         color6
+set_from_resource         $cyan             color14
+set_from_resource         $darkwhite        color7
+set_from_resource         $white            color15
 
-#                       BORDER		BACKGROUND	TEXT		INDICATOR   CHILD_BORDER
-client.focused		$red		$red		$magenta	$darkmagenta		$darkblue
-client.unfocused	$transparent	$blue		$white		$darkblue		$darkblack
-client.focused_inactive	$transparent	$blue		$white		$darkblue		$darkblack
-client.urgent		$darkred	$darkred	$black		$darkred		$darkred
-client.background $black
+#                       BORDER		  BACKGROUND  TEXT		INDICATOR	  CHILD_BORDER
+client.focused			$red		  $red		  $magenta	$darkmagenta  $darkblue
+client.unfocused		$transparent  $blue		  $white	$darkblue	  $darkblack
+client.focused_inactive	$transparent  $blue		  $white	$darkblue	  $darkblack
+client.urgent			$magenta	  $darkred	  $black	$magenta	  $magenta
+client.background		$black
 
 bar {
-	font pango:mono 10
 	colors {
 			background $darkblack
 			statusline $darkwhite
@@ -227,9 +224,8 @@ bar {
         		active_workspace   $blue $blue $darkwhite
       			inactive_workspace $darkblack $darkblack $white
         		urgent_workspace   $darkblack $darkblack $white
-		}
-	status_command i3blocks
+	}
 	position top
-	mode dock
-	modifier None
+	font pango:mono 10
+	status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks
 }
