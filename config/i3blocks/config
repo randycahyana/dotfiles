@@ -16,7 +16,7 @@ interval=10
 color=#91E78B
 
 [battery]
-markup=pango
+label=BAT
 interval=30
 
 [volume-pulseaudio]
