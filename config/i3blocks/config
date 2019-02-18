@@ -2,13 +2,13 @@ separator_block_width=15
 markup=none
 command=$SCRIPT_DIR/$BLOCK_NAME
 
-[memory]
-label=MEM 
-interval=30
-
 [disk]
 label=HOME 
 DIR=/home
+interval=30
+
+[memory]
+label=MEM 
 interval=30
 
 [iface]
@@ -19,14 +19,14 @@ color=#91E78B
 markup=pango
 interval=30
 
+[volume-pulseaudio]
+command=$SCRIPT_DIR/volume-pulseaudio
+interval=once
+signal=1
+
 [time]
 interval=1
 STRFTIME_FORMAT=%Y-%m-%d %H:%M
 TZONES=Asia/Jakarta,Europe/London,Canada/Central
 TZ_LABELS=Jakarta,UK,Canada
 color=#A6D1FA
-
-[volume-pulseaudio]
-command=$SCRIPT_DIR/volume-pulseaudio
-interval=once
-signal=1
