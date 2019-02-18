@@ -87,7 +87,8 @@ bindsym $mod+Shift+r restart
 
 bindsym $mod+m bar mode toggle
 
-bindsym $mod+p exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Documents/'
+bindsym $mod+p exec flameshot gui -p ~/Pictures
+bindsym $mod+Shift+p exec flameshot full -p ~/Pictures
 #==================================================================
 # Start-up program
 #==================================================================
