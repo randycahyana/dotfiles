@@ -85,8 +85,6 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-bindsym $mod+m bar mode toggle
-
 bindsym $mod+p exec flameshot gui -p ~/Pictures
 bindsym $mod+Shift+p exec flameshot full -p ~/Pictures
 #==================================================================
@@ -94,6 +92,7 @@ bindsym $mod+Shift+p exec flameshot full -p ~/Pictures
 #==================================================================
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id nm-applet
+exec_always --no-startup-id ~/.config/polybar/polybar-init.sh &
 
 bindsym $mod+space exec "rofi -show-icons -modi combi -show combi -combi-modi run,drun"
 
@@ -215,18 +214,3 @@ client.unfocused		$transparent  $blue		  $white	$darkblue	  $darkblack
 client.focused_inactive	$transparent  $blue		  $white	$darkblue	  $darkblack
 client.urgent			$magenta	  $darkred	  $black	$magenta	  $magenta
 client.background		$black
-
-bar {
-	colors {
-			background $darkblack
-			statusline $darkwhite
-			separator $cyan
-			focused_workspace  $blue $darkblue $darkblack
-        		active_workspace   $blue $blue $darkwhite
-      			inactive_workspace $darkblack $darkblack $white
-        		urgent_workspace   $darkblack $darkblack $white
-	}
-	position top
-	font pango:mono 10
-	status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks
-}
