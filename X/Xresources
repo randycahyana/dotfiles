@@ -35,31 +35,6 @@
 *.color7:       #c5c8c6
 *.color15:      #ffffff
 
-URxvt.intensityStyles:	false
-
-URxvt.depth:		32
-URxvt.font: 		xft:monospace:size=12
-URxvt.scrollBar:	false
-URxvt.cursorColor:	white
-
-!! Extensions
-URxvt.perl-ext-common:	default,matcher,resize-font,keyboard-select
-URxvt.colorUL:			#4682B4
-!! keyboard-select:
-URxvt.keysym.M-Escape: perl:keyboard-select:activate
-!! resize-font
-URxvt.resize-font.smaller:	C-Down
-URxvt.resize-font.bigger:	C-Up
-!! Matcher
-URxvt.url-launcher: 	/usr/bin/xdg-open
-URxvt.matcher.button:	1
-
-rofi.color-enabled:	true
-rofi.color-window:	#000, #000, #000
-rofi.color-normal:	#111, #819396, #222, #008ed4, #ffffff
-rofi.color-active:	#002b37, #008ed4, #003643, #008ed4, #66c6ff
-rofi.color-urgent:	#002b37, #da4281, #003643, #008ed4, #890661
-
 rofi.fake-transparency:	true
 rofi.lines:		3
 rofi.bw:		0

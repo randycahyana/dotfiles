@@ -77,7 +77,7 @@ bindsym $mod+Shift+q kill
 # i3
 #==================================================================
 # Terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec kitty
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
