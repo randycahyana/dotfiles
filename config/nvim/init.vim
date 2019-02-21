@@ -13,13 +13,6 @@ syntax on
 " Functions
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" YouCompleteMe
-function! BuildYCM(info)
-  if a:info.status == 'installed' || a:info.force
-    !./install.py --clang-completer --tern-completer --omnisharp-completer --gocode-completer
-  endif
-endfunction
-
 " Deoplete
 function! DoRemoteUpdate(arg)
  UpdateRemotePlugins
@@ -41,7 +34,6 @@ call plug#begin('~/.nvim/plugged')
 Plug 'airblade/vim-gitgutter'
 
 " Code completion
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM'), 'for': ['c', 'cpp', 'objc', 'objcpp'] } | Plug 'ervandew/supertab' | Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'SirVer/ultisnips'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemoteUpdate')} 
 Plug 'ervandew/supertab'
@@ -83,19 +75,6 @@ let g:sql_type_default = 'pgsql'
 let g:SuperTabDefaultCompletionType = '<c-n>'
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_folding_disabled = 1
-
-let g:ycm_semantic_triggers =  {
-  \   'c' : ['->', '.'],
-  \   'objc' : ['->', '.'],
-  \   'ocaml' : ['.', '#'],
-  \   'cpp,objcpp' : ['->', '.', '::'],
-  \   'perl' : ['->'],
-  \   'php' : ['->', '::'],
-  \   'cs,java,javascript,typescript,d,vim,python,perl6,scala,vb,elixir,go' : ['.'],
-  \   'ruby' : ['.', '::'],
-  \   'lua' : ['.', ':'],
-  \   'erlang' : [':'],
-  \ }
 
 "---------------------------------------------------
 "
