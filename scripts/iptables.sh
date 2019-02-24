@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ## forward 80/443 -> 8443
 sudo iptables -I INPUT 1 -p tcp --dport 8443 -j ACCEPT
 sudo iptables -I INPUT 1 -p tcp --dport 443 -j ACCEPT
