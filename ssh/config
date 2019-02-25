@@ -17,6 +17,10 @@ Host spicy01
 	Hostname 13.229.139.125
 	User ubuntu
 
+Host spicy02
+	Hostname 52.221.208.76
+	User ubuntu
+
 Host dev01
 	hostname 13.250.109.172
 	User randy
