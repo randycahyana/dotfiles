@@ -23,10 +23,15 @@ kcc() {
 	fi
 }
 
-# others
+# apps
 alias vim="nvim"
-alias l="ls -la"
-alias dot="cd $HOME/dotfiles"
-alias gldoc="godoc -http=:6060"
 alias dc="docker-compose"
+alias gldoc="godoc -http=:6060"
+
+## tools
+alias l="ls -la"
+alias d="kitty +kitten diff"
+
+## directories
+alias dot="cd $HOME/dotfiles"
 
