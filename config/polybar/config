@@ -27,7 +27,7 @@ line-color = #f00
 border-size = 4
 border-color = #00000000
 
-padding-left = 0
+padding-left = 2
 padding-right = 2
 
 module-margin-left = 1
@@ -37,8 +37,8 @@ font-0 = xos4 Terminus:size=12;0
 ;font-1 = Wuncon Siji:pixelsize=10;2
 font-1 = FontAwesome5Free:style=Solid:pixelsize=11
 
-modules-left = i3
-modules-center = xwindow
+modules-left = xwindow
+modules-center = i3
 modules-right = filesystem pulseaudio cpu memory battery wlan eth  date
 
 tray-position = right
