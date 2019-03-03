@@ -41,8 +41,5 @@
 [includeIf "gitdir:~/workspace/brank.as/"]
   path = .gitconfig-work
 
-[includeIf "gitdir:~/workspace/gitlab.bri.co.id/"]
-  path = .gitconfig-work-bri
-
 [http]
   cookiefile = /home/randy/.gitcookies

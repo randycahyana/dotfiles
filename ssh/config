@@ -9,10 +9,6 @@ Host drone01
 	Hostname drone01
 	User root
 
-Host k8s01
-	Hostname k8s01
-	User administrator
-
 Host spicy01
 	Hostname 13.229.139.125
 	User ubuntu
@@ -24,16 +20,3 @@ Host spicy02
 Host dev01
 	hostname 13.250.109.172
 	User randy
-
-Host bri-dev-01
-	hostname 172.18.133.254
-	User administrator
-
-Host bri-dev-02
-	hostname 172.18.136.12
-	User administrator
-
-Host bigdata-*
-	User ubuntu
-	StrictHostKeyChecking no
-	UserKnownHostsFile /dev/null
