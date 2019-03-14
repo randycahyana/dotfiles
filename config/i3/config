@@ -164,10 +164,10 @@ bindsym $mod+9 exec --no-startup-id $locker
 #==================================================================
 # Window rules rules
 #==================================================================
-assign [class="^Google-chrome.*$"] 2
+assign [class="^Google-chrome.*$"] 3
 	for_window [class="^Google-chrome.*$"] focus
 
-assign [class="^Chromium$"] 2
+assign [class="^Chromium$"] 3
 	for_window [class="^Chromium$"] focus
 
 assign [class="^Firefox$"] 3
@@ -175,9 +175,6 @@ assign [class="^Firefox$"] 3
 
 assign [class="^Slack$"] 4
 	for_window [class="^Slack$"] focus
-
-assign [class="^Mailspring$"] 8
-	for_window [class="^Mailspring$"] focus
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
