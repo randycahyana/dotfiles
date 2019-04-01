@@ -1,10 +1,12 @@
-set title number relativenumber completeopt-=preview
-set softtabstop=2 tabstop=4 shiftwidth=4 noexpandtab 
-set encoding=utf-8 nobomb
+set encoding=utf-8
+
+set wrap linebreak nolist nojoinspaces
+set nobackup noswapfile nowritebackup
+set noexpandtab tabstop=8 softtabstop=8 shiftwidth=8
+set textwidth=80
+set title relativenumber completeopt-=preview
 set ignorecase smartcase
-set scrolloff=999
 set showmode showcmd hidden wildmode=list:longest
-set signcolumn=yes
 set background=dark
 
 syntax on
@@ -16,7 +18,7 @@ syntax on
 " Deoplete
 function! DoRemoteUpdate(arg)
  UpdateRemotePlugins
-endfunction<Paste>
+endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugins
