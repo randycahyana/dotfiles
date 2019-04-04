@@ -36,3 +36,5 @@ for i in $(ls $SRC/X); do
     ln -svf $SRC/X/$i $HOME/.$i
   fi
 done
+
+ln -svf $SRC/jira.d $HOME/.jira.d

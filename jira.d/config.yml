@@ -1,0 +1,12 @@
+endpoint: https://brankas.atlassian.net
+password-source: keyring
+authentication-method: api-token
+user: "Randy Cahyana"
+login: randy.cahyana@brank.as
+
+custom-commands:
+  - name: mine
+    help: display issues assigned to me
+    script: |-
+      {{jira}} list --template table --query "resolution = unresolved and assignee=currentuser() ORDER BY priority desc, created"
+
