@@ -21,4 +21,4 @@ echo "installing primary desktop apps..."
 sudo pacman -S firefox chromium ranger w3m zathura zathura-pdf-mupdf kitty
 
 echo "installing utilities tools..."
-sudo pacman -S acpi xdotool libnotify dunst
+sudo pacman -S acpi xdotool libnotify dunst gnome-keyring libsecret
