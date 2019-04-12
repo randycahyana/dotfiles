@@ -50,7 +50,6 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 " Languages
 Plug 'exu/pgsql.vim', { 'for': 'sql' }
 Plug 'fatih/vim-go', { 'for': 'go' } | Plug 'zchee/deoplete-go', { 'do': 'make' }
-Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } | Plug 'davinche/godown-vim'
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'elzr/vim-json', { 'for': 'json' } 
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript'} | Plug 'Quramy/tsuquyomi'
@@ -68,8 +67,6 @@ let g:closetag_filenames = '*.html,*.xml'
 let g:deoplete#enable_at_startup = 1
 let g:flow#qfsize = 0
 let g:go_auto_type_info = 1
-let g:godown_autorun = 1
-let g:godown_port = 7331
 let g:go_fmt_command = 'goimports'
 let g:go_gocode_unimported_packages = 1
 let g:jsx_ext_required = 0
