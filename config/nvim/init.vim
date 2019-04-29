@@ -4,7 +4,7 @@ set wrap linebreak nolist nojoinspaces
 set nobackup noswapfile nowritebackup
 set noexpandtab tabstop=8 softtabstop=8 shiftwidth=8
 set textwidth=80
-set title relativenumber completeopt-=preview
+set title number completeopt-=preview
 set ignorecase smartcase
 set showmode showcmd hidden wildmode=list:longest
 set background=dark
@@ -34,6 +34,8 @@ call plug#begin('~/.nvim/plugged')
 
 " UI
 Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Code completion
 Plug 'SirVer/ultisnips'
@@ -74,6 +76,7 @@ let g:sql_type_default = 'pgsql'
 let g:SuperTabDefaultCompletionType = '<c-n>'
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_folding_disabled = 1
+let g:airline_theme='badcat'
 
 "---------------------------------------------------
 "
