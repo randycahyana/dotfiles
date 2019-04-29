@@ -97,12 +97,11 @@ nnoremap <Down> <Nop>
 nnoremap <Left> <Nop>
 nnoremap <Right> <Nop>
 
-" vim-go settings
-autocmd FileType go nmap <Leader>r <Plug>(go-rename)
-autocmd FileType go nmap <Leader>gd <Plug>(go-def-split)
-autocmd FileType go nmap <Leader>gv <Plug>(go-def-vertical)
-autocmd FileType go nmap <Leader>gt <Plug>(go-def-tab)
-autocmd FileType go nmap <Leader>gs <Plug>(go-doc)
+" language server keys
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> gh :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gr :call LanguageClient#textDocument_rename()<CR>
+nnoremap <silent> gt :call LanguageClient#textDocument_formatting_sync()<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -117,9 +116,11 @@ autocmd BufNewFile,BufRead *.ejs set filetype=html
 autocmd BufNewFile,BufRead *.js,*.vue,*.bolt setlocal filetype=typescript
 autocmd BufNewFile,BufRead *.go.tpl,*.qtpl setlocal syntax=go
 
-" Launch gopls when Go files are in use
+" launch language servers
 let g:LanguageClient_serverCommands = {
        \ 'go': ['gopls']
        \ }
-" Run gofmt and goimports on save
+
+" run gofmt and goimports on save
 autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
+autocmd BufWritePre *.go :%! goimports
