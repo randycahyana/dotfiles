@@ -8,6 +8,7 @@ set title number completeopt-=preview
 set ignorecase smartcase
 set showmode showcmd hidden wildmode=list:longest
 set background=dark
+set statusline=%!bufnr('%')
 
 syntax on
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -17,7 +18,7 @@ syntax on
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Deoplete
 function! DoRemoteUpdate(arg)
- UpdateRemotePlugins
+  UpdateRemotePlugins
 endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -26,7 +27,7 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
@@ -38,6 +39,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Code completion
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 Plug 'SirVer/ultisnips'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemoteUpdate')} 
 Plug 'ervandew/supertab'
@@ -51,7 +56,7 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " Languages
 Plug 'exu/pgsql.vim', { 'for': 'sql' }
-Plug 'fatih/vim-go', { 'for': 'go' } | Plug 'zchee/deoplete-go', { 'do': 'make' }
+Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'elzr/vim-json', { 'for': 'json' } 
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript'} | Plug 'Quramy/tsuquyomi'
@@ -68,9 +73,6 @@ let delimitMate_expand_cr = 1
 let g:closetag_filenames = '*.html,*.xml'
 let g:deoplete#enable_at_startup = 1
 let g:flow#qfsize = 0
-let g:go_auto_type_info = 1
-let g:go_fmt_command = 'goimports'
-let g:go_gocode_unimported_packages = 1
 let g:jsx_ext_required = 0
 let g:sql_type_default = 'pgsql'
 let g:SuperTabDefaultCompletionType = '<c-n>'
@@ -114,3 +116,10 @@ autocmd BufNewFile,BufRead *.rules setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufNewFile,BufRead *.ejs set filetype=html
 autocmd BufNewFile,BufRead *.js,*.vue,*.bolt setlocal filetype=typescript
 autocmd BufNewFile,BufRead *.go.tpl,*.qtpl setlocal syntax=go
+
+" Launch gopls when Go files are in use
+let g:LanguageClient_serverCommands = {
+       \ 'go': ['gopls']
+       \ }
+" Run gofmt and goimports on save
+autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
