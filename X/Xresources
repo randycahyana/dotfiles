@@ -1,6 +1,13 @@
-! special
-*.foreground:   #c5c8c6
-*.background:   #1d1f21
+*background:            #272827
+*foreground:            #657b83
+*fading:                15
+*fadeColor:             black
+*cursorColor:           #16A085
+*pointerColorBackground:#2B2C2B
+*pointerColorForeground:#16A085
+
+*.font:xft:Monospace:pixelsize=14
+
 *.cursorColor:  #c5c8c6
 
 ! black

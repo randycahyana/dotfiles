@@ -1,13 +1,13 @@
 [colors]
-background = #222
+background = #272827
 background-alt = #444
-foreground = #eee
+foreground = #657b83
 foreground-alt = #555
 linecolor = #fba922
-bordercolor = #333
-accent = #e60053
-primary = #ffb52a
-secondary = #e60053
+bordercolor = #fba922
+accent = #fba922
+primary = #fba922
+secondary = #fba922
 alert = #bd2c40
 
 [bar/top]
@@ -34,7 +34,6 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = xos4 Terminus:size=12;0
-;font-1 = Wuncon Siji:pixelsize=10;2
 font-1 = FontAwesome5Free:style=Solid:pixelsize=11
 
 modules-left = xwindow
@@ -72,7 +71,7 @@ label-mode-background = ${colors.primary}
 ; focused = Active workspace on focused monitor
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+label-focused-underline= ${colors.foreground}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor

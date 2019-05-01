@@ -10,6 +10,8 @@ set showmode showcmd hidden wildmode=list:longest
 set background=dark
 set statusline=%!bufnr('%')
 
+colorscheme pablo
+
 syntax on
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "

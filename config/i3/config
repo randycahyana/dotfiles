@@ -176,6 +176,9 @@ assign [class="^Firefox$"] 3
 assign [class="^Slack$"] 4
 	for_window [class="^Slack$"] focus
 
+assign [class="^Thunderbird$"] 8
+	for_window [class="^Thunderbird$"] focus
+
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
@@ -187,27 +190,30 @@ for_window [class="(?i)virtualbox"] floating enable border normal
 #==================================================================
 # themes
 #==================================================================
-# Set Xresources colors:
-set_from_resource         $darkblack        color0
-set_from_resource         $black            color8
-set_from_resource         $darkred          color1
-set_from_resource         $red              color9
-set_from_resource         $darkgreen        color2
-set_from_resource         $green            color10
-set_from_resource         $darkyellow       color3
-set_from_resource         $yellow           color11
-set_from_resource         $darkblue         color4
-set_from_resource         $blue             color12
-set_from_resource         $darkmagenta      color5
-set_from_resource         $magenta			color13
-set_from_resource         $darkcyan         color6
-set_from_resource         $cyan             color14
-set_from_resource         $darkwhite        color7
-set_from_resource         $white            color15
 
-#                       BORDER		  BACKGROUND  TEXT		INDICATOR	  CHILD_BORDER
-client.focused			$red		  $red		  $magenta	$darkmagenta  $darkblue
-client.unfocused		$transparent  $blue		  $white	$darkblue	  $darkblack
-client.focused_inactive	$transparent  $blue		  $white	$darkblue	  $darkblack
-client.urgent			$magenta	  $darkred	  $black	$magenta	  $magenta
-client.background		$black
+# Set Xresources colors:
+set_from_resource	$foreground	foreground
+set_from_resource	$color0		color0
+set_from_resource 	$color1 	color1
+set_from_resource 	$color2 	color2
+set_from_resource 	$color3 	color3
+set_from_resource 	$color4 	color4
+set_from_resource 	$color5 	color5
+set_from_resource 	$color6		color6
+set_from_resource	$color7		color7
+set_from_resource	$color8		color8
+set_from_resource	$color9		color9
+set_from_resource	$color10	color10
+set_from_resource	$color11	color11
+set_from_resource	$color12	color12
+set_from_resource	$color13	color13
+set_from_resource	$color14	color14
+set_from_resource	$color15	color15
+
+client.background	$background
+
+client.focused         	$foreground	$color0		$foreground	$color7		$color7	
+client.unfocused       	$foreground	$background	$foreground	$background	$background
+client.focused_inactive	$foreground	$background	$foreground	$background	$background
+client.urgent		$foreground	$background	$foreground	$background	$background
+client.placeholder	$foreground	$background	$foreground	$background	$background
