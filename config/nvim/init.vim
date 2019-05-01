@@ -123,4 +123,4 @@ let g:LanguageClient_serverCommands = {
 
 " run gofmt and goimports on save
 autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
-autocmd BufWritePre *.go :%! goimports
+"autocmd BufWritePre *.go :%! goimports
