@@ -176,6 +176,9 @@ assign [class="^Firefox$"] 3
 assign [class="^Slack$"] 4
 	for_window [class="^Slack$"] focus
 
+assign [class="^Postman$"] 5
+	for_window [class="^Postman$"] focus
+
 assign [class="^Thunderbird$"] 8
 	for_window [class="^Thunderbird$"] focus
 
