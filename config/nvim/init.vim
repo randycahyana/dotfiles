@@ -59,6 +59,7 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 " Languages
 Plug 'exu/pgsql.vim', { 'for': 'sql' }
 Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
+Plug 'vim-jp/vim-go-extra', { 'for': 'go' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'elzr/vim-json', { 'for': 'json' } 
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript'} | Plug 'Quramy/tsuquyomi'
@@ -125,4 +126,6 @@ let g:LanguageClient_serverCommands = {
 
 " run gofmt and goimports on save
 autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
-"autocmd BufWritePre *.go :%! goimports
+
+let g:gofmt_command = "goimports"
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
