@@ -181,6 +181,8 @@ assign [class="^Postman$"] 5
 
 assign [class="^Thunderbird$"] 8
 	for_window [class="^Thunderbird$"] focus
+assign [class="^Transmission$"] 8
+	for_window [class="^Transmission$"] focus
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
