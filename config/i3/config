@@ -179,6 +179,9 @@ assign [class="^Slack$"] 4
 assign [class="^Postman$"] 5
 	for_window [class="^Postman$"] focus
 
+assign [class="^Spotify$"] 7
+	for_window [class="^Spotify$"] focus
+
 assign [class="^Thunderbird$"] 8
 	for_window [class="^Thunderbird$"] focus
 assign [class="^Transmission$"] 8
