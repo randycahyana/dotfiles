@@ -92,7 +92,7 @@ bindsym $mod+Shift+p exec flameshot full -p ~/Pictures
 #==================================================================
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id nm-applet
-exec_always --no-startup-id ~/.config/polybar/polybar-init.sh &
+exec_always --no-startup-id ~/.config/polybar/init.sh &
 
 bindsym $mod+space exec "rofi -show-icons -modi combi -show combi -combi-modi run,drun"
 
