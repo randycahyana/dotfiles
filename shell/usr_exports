@@ -15,15 +15,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Shortcuts
-export GITHUB=$GOPATH/src/github.com
-export GITLAB=$GOPATH/src/gitlab.com
-export BITBUCKET=$GOPATH/src/bitbucket.org
+export GITHUB=$GOPATH/github.com
+export GITLAB=$GOPATH/gitlab.com
+export BITBUCKET=$GOPATH/bitbucket.org
 
-export RND=$GITHUB/rnd
-export RNDIR=$GITHUB/rndir
+export RND=$GOPATH/rnd
+export RNDIR=$GOPATH/rndir
 
-export BITROUPE=$GOPATH/src/git.bitroupe.com
-export SPICY=$GITHUB/spicynoodle
-
-export BRANKAS=$GOPATH/src/brank.as
-export BRI=$GOPATH/src/gitlab.bri.co.id
+export SPICY=$GOPATH/spicynoodle
+export BRANKAS=$GOPATH/brank.as
