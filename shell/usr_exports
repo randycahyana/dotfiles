@@ -22,5 +22,12 @@ export BITBUCKET=$GOPATH/bitbucket.org
 export RND=$GOPATH/rnd
 export RNDIR=$GOPATH/rndir
 
-export SPICY=$GOPATH/spicynoodle
-export BRANKAS=$GOPATH/brank.as
+export BITROUPE=$GOPATH/src/git.bitroupe.com
+export SPICY=$GITHUB/spicynoodle
+
+export BRANKAS=$GOPATH/src/brank.as
+export BRI=$GOPATH/src/gitlab.bri.co.id
+
+# GOPROXY
+export GONOPROXY='brank.as/*'
+export GONOSUMDB='brank.as/*'
