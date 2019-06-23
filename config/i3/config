@@ -144,7 +144,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 #==================================================================
 # Power
 #==================================================================
-set $Locker i3lock-fancy && sleep 1
+set $Locker dm-tool lock
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
