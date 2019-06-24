@@ -26,6 +26,9 @@ kcc() {
 alias kcp='export KUBECONFIG=~/.kube/config-personal'
 alias kcw='export KUBECONFIG=~/.kube/config-work'
 
+# set default config file
+kcp
+
 # apps
 alias vim="nvim"
 alias dc="docker-compose"
