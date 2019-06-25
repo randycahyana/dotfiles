@@ -27,7 +27,7 @@ alias kcp='export KUBECONFIG=~/.kube/config-personal'
 alias kcw='export KUBECONFIG=~/.kube/config-work'
 
 # set default config file
-kcp
+kcw
 
 # apps
 alias vim="nvim"
