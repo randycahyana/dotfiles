@@ -117,7 +117,7 @@ autocmd FileType html,xml,ruby,sh,javascript,jsx,json,yaml,sql,vim,cmake,proto,t
 autocmd BufNewFile,BufRead *.rules setlocal tabstop=2 shiftwidth=2 softtabstop=2 noexpandtab
 autocmd BufNewFile,BufRead *.ejs set filetype=html
 autocmd BufNewFile,BufRead *.js,*.vue,*.bolt setlocal filetype=typescript
-autocmd BufNewFile,BufRead *.go.tpl,*.qtpl setlocal syntax=go
+autocmd BufNewFile,BufRead *.go.tpl,*.qtpl,*.gunk setlocal syntax=go
 
 " launch language servers
 let g:LanguageClient_serverCommands = {
@@ -127,5 +127,5 @@ let g:LanguageClient_serverCommands = {
 " run gofmt and goimports on save
 autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
 
-let g:gofmt_command = "goimports"
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
+"let g:gofmt_command = "goimports"
+"autocmd FileType go autocmd BufWritePre <buffer> Fmt
