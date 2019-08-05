@@ -41,10 +41,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Code completion
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
 Plug 'SirVer/ultisnips'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemoteUpdate')} 
 Plug 'ervandew/supertab'
@@ -57,9 +53,9 @@ Plug 'godlygeek/tabular'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " Languages
+Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 Plug 'exu/pgsql.vim', { 'for': 'sql' }
 Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
-Plug 'vim-jp/vim-go-extra', { 'for': 'go' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'elzr/vim-json', { 'for': 'json' } 
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript'} | Plug 'Quramy/tsuquyomi'
@@ -83,6 +79,20 @@ let g:vim_markdown_conceal = 0
 let g:vim_markdown_folding_disabled = 1
 let g:airline_theme='badcat'
 
+
+" vim-go
+let g:go_auto_type_info = 1
+let g:go_fmt_command = 'goimports'
+let g:go_fmt_fail_silently = 1
+let g:go_gocode_autobuild = 1
+let g:go_gocode_propose_source = 1
+let g:go_gocode_unimported_packages = 1
+let g:go_list_type = 'quickfix'
+let g:go_updatetime = 350
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+
+
 "---------------------------------------------------
 "
 " Keys remap
@@ -100,11 +110,12 @@ nnoremap <Down> <Nop>
 nnoremap <Left> <Nop>
 nnoremap <Right> <Nop>
 
-" language server keys
-nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> gh :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> gr :call LanguageClient#textDocument_rename()<CR>
-nnoremap <silent> gt :call LanguageClient#textDocument_formatting_sync()<CR>
+" vim-go keys
+au FileType go nmap <Leader>r <Plug>(go-rename)
+au FileType go nmap <Leader>gd <Plug>(go-def-split)
+au FileType go nmap <Leader>gv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>gt <Plug>(go-def-tab)
+au FileType go nmap <Leader>gs <Plug>(go-doc)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -118,14 +129,3 @@ autocmd BufNewFile,BufRead *.rules setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufNewFile,BufRead *.ejs set filetype=html
 autocmd BufNewFile,BufRead *.js,*.vue,*.bolt setlocal filetype=typescript
 autocmd BufNewFile,BufRead *.go.tpl,*.qtpl,*.gunk setlocal syntax=go
-
-" launch language servers
-let g:LanguageClient_serverCommands = {
-       \ 'go': ['gopls']
-       \ }
-
-" run gofmt and goimports on save
-autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
-
-"let g:gofmt_command = "goimports"
-"autocmd FileType go autocmd BufWritePre <buffer> Fmt
