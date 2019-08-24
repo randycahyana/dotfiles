@@ -43,3 +43,5 @@ for i in $(ls $SRC/jira.d); do
     ln -svf $SRC/jira.d/$i $HOME/.$i
   fi
 done
+
+ln -svf $SRC/vimrc $HOME/.vimrc

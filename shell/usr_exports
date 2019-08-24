@@ -9,6 +9,7 @@ export GOPATH=/home/randy/workspace
 export GOPRIVATE=brank.as/*
 export GOROOT=/home/randy/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GOPRIVATE='brank.as/*'
 
 # nvm
 export NVM_DIR="$HOME/.nvm"

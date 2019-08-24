@@ -3,7 +3,7 @@
   email = ranren.cahyana@gmail.com
 
 [core]
-  editor = nvim
+  editor = vim
 
 [alias]
   s = status
