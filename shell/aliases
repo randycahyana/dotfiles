@@ -32,7 +32,6 @@ alias kcw='export KUBECONFIG=~/.kube/config-work'
 kcw
 
 # apps
-alias vim="nvim"
 alias dc="docker-compose"
 alias gldoc="godoc -http=:6060"
 
