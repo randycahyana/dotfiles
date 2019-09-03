@@ -18,7 +18,7 @@ done
 
 # ssh config
 for i in $(ls $SRC/ssh); do
-  if [[ ! -f $i && ! -e $HOME/.config/$i ]]; then
+  if [[ ! -f $i && ! -e $HOME/.$i ]]; then
     ln -svf $SRC/ssh/$i $HOME/.ssh/$i
   fi
 done
@@ -37,4 +37,9 @@ for i in $(ls $SRC/X); do
   fi
 done
 
-ln -svf $SRC/jira.d $HOME/.jira.d
+# jira config
+for i in $(ls $SRC/jira.d); do
+  if [[ ! -f $i && ! -e $HOME/.$i ]]; then
+    ln -svf $SRC/jira.d/$i $HOME/.$i
+  fi
+done
