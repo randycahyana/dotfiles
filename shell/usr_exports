@@ -6,6 +6,7 @@ export BROWER=firefox
 # Go
 export GOROOT_BOOTSTRAP=/usr/local/go1.9.5
 export GOPATH=/home/randy/workspace
+export GOPRIVATE=brank.as/*
 export GOROOT=/home/randy/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
