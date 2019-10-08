@@ -32,6 +32,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'govim/govim'
 Plug 'jiangmiao/auto-pairs'
 
+" code formatter
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
+
 call plug#end()
 
 " override file settings
@@ -40,3 +45,9 @@ autocmd FileType html,xml,sh,javascript,typescript,json,yaml,sql,vim setlocal ta
 
 " plugins settings
 let g:airline_theme='badcat'
+
+call glaive#Install()
+
+augroup autoformat_settings
+  autocmd FileType html,css,json AutoFormatBuffer js-beautify
+augroup END
