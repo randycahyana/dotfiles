@@ -25,11 +25,15 @@ kcc() {
 	fi
 }
 
-alias kcp='export KUBECONFIG=~/.kube/config-personal'
-alias kcw='export KUBECONFIG=~/.kube/config-work'
-
-# set default config file
-kcw
+gcc() {
+	if [[ $# -eq 0 ]]; then
+		export KUBECONFIG=$HOME/.kube/config-personal
+		gcl config configurations activate rnd
+	else
+		export KUBECONFIG=$HOME/.kube/config-$@
+		gcl config configurations activate $@
+	fi
+}
 
 # apps
 alias dc="docker-compose"
@@ -41,4 +45,3 @@ alias d="kitty +kitten diff"
 
 ## directories
 alias dot="cd $HOME/dotfiles"
-
