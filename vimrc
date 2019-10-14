@@ -12,8 +12,8 @@ set textwidth=80 formatoptions-=t formatoptions+=j
 set showcmd showmode hidden
 set incsearch ignorecase smartcase showmatch hlsearch
 set noerrorbells novisualbell
-set updatetime=500 signcolumn=number
 set mouse=a ttymouse=sgr
+set number
 
 colorscheme pablo
 
