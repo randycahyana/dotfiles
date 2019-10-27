@@ -41,7 +41,8 @@ call plug#end()
 
 " override file settings
 autocmd BufNewFile,BufRead *.go.tpl,*.qtpl,*.gunk setlocal syntax=go
-autocmd FileType html,xml,sh,javascript,typescript,json,yaml,sql,vim setlocal tabstop=4 shiftwidth=4  softtabstop=4 noexpandtab
+autocmd BufNewFile,BufRead *.fish setlocal syntax=sh
+autocmd FileType html,xml,sh,javascript,typescript,json,yaml,sql,vim,fish setlocal tabstop=4 shiftwidth=4  softtabstop=4 noexpandtab
 
 " plugins settings
 let g:airline_theme='badcat'
