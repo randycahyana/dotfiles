@@ -1,4 +1,4 @@
-export TERM=xterm-256color
+export TERM=xterm-kitty
 export EDITOR=vim
 export FILE=ranger
 export BROWER=chromium
@@ -6,30 +6,15 @@ export BROWER=chromium
 # Go
 export GOROOT_BOOTSTRAP=/usr/local/go1.9.5
 export GOPATH=/home/randy/workspace
-export GOPRIVATE=brank.as/*
 export GOROOT=/home/randy/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/.yarn/bin
+
 export GOPRIVATE='brank.as/*'
+export GONOPROXY='brank.as/*'
+export GONOSUMDB='brank.as/*'
+
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/.yarn/bin
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Shortcuts
-export GITHUB=$GOPATH/github.com
-export GITLAB=$GOPATH/gitlab.com
-export BITBUCKET=$GOPATH/bitbucket.org
-
-export RND=$GOPATH/rnd
-export RNDIR=$GOPATH/rndir
-
-export BITROUPE=$GOPATH/src/git.bitroupe.com
-export SPICY=$GITHUB/spicynoodle
-
-export BRANKAS=$GOPATH/src/brank.as
-export BRI=$GOPATH/src/gitlab.bri.co.id
-
-# GOPROXY
-export GONOPROXY='brank.as/*'
-export GONOSUMDB='brank.as/*'
