@@ -17,6 +17,7 @@ set -gx PATH /home/$USER/google-cloud-sdk/bin $PATH
 alias d="kitty +kitten diff"
 alias dc="docker-compose"
 alias dot="cd $HOME/dotfiles"
+alias t="tmux"
 
 ## kubectl
 alias kc="kubectl"
