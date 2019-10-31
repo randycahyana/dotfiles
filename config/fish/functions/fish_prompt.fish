@@ -1,5 +1,15 @@
+set __fish_git_prompt_showdirtystate 'yes'
+set __fish_git_prompt_showuntrackedfiles 'yes'
+set __fish_git_prompt_color_branch yellow
+set __fish_git_prompt_color_upstream_ahead green
+set __fish_git_prompt_color_upstream_behind red
+
+set __fish_git_prompt_char_dirtystate '!'
+set __fish_git_prompt_char_untrackedfiles '?'
+set __fish_git_prompt_char_stashstate '$'
+
 function fish_prompt --description 'Write out the prompt'
-	set -l last_status $status
+    set -l last_status $status
     set -l normal (set_color normal)
 
     # Hack; fish_config only copies the fish_prompt function (see #736)
@@ -55,8 +65,9 @@ function fish_prompt --description 'Write out the prompt'
             set suffix '#'
         case '*'
             set color_cwd $fish_color_cwd
-            set suffix '>'
+            set suffix '$'
     end
 
-    echo -n -s (set_color $fish_color_user) "$USER" $normal @ (set_color $fish_color_host) (prompt_hostname) $normal ' ' (set_color $color_cwd) (prompt_pwd) $normal (__fish_vcs_prompt) $normal $suffix " "
+    echo -s (set_color $fish_color_user) "$USER" $normal - (set_color $fish_color_host) (prompt_hostname) $normal ':[' (set_color $color_cwd) (basename $PWD) $normal ']' (__fish_git_prompt) $normal \n $suffix " "
+
 end
