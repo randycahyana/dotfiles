@@ -17,19 +17,23 @@ set number
 
 colorscheme pablo
 
+" key bindings
+inoremap <C-@> <c-x><c-o>
+
 " plugins
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source ~/.vimrc
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall --sync | source ~/.vimrc
 endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'fatih/vim-go'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'govim/govim'
 Plug 'jiangmiao/auto-pairs'
 
 " code formatter
@@ -50,5 +54,5 @@ let g:airline_theme='badcat'
 call glaive#Install()
 
 augroup autoformat_settings
-  autocmd FileType html,css,json AutoFormatBuffer js-beautify
+	autocmd FileType html,css,json AutoFormatBuffer js-beautify
 augroup END
