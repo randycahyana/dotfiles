@@ -164,6 +164,7 @@ mode "$mode_system" {
 bindsym $mod+Shift+e mode "$mode_system"
 bindsym $mod+9 exec --no-startup-id $locker
 
+exec xset s off -dpms
 #==================================================================
 # Window rules rules
 #==================================================================
