@@ -50,6 +50,8 @@ autocmd FileType html,xml,sh,javascript,typescript,json,yaml,sql,vim,fish setloc
 
 " plugins settings
 let g:airline_theme='badcat'
+let g:go_fmt_command = "goimports"
+let g:go_list_type = "quickfix"
 
 call glaive#Install()
 
