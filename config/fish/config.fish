@@ -13,7 +13,6 @@ set -gx PATH $GOPATH/bin $PATH
 set -gx PATH /home/$USER/google-cloud-sdk/bin $PATH
 
 # Aliases
-
 alias d="kitty +kitten diff"
 alias dc="docker-compose"
 alias dot="cd $HOME/dotfiles"
