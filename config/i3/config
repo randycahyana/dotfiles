@@ -12,6 +12,7 @@ set $down k
 set $left h
 set $right l
 
+
 #==================================================================
 # Layout
 #==================================================================
@@ -24,7 +25,11 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# i3-gapsj
+# Move workspace
+bindsym $mod+bracketleft move workspace to output left
+bindsym $mod+bracketright move workspace to output right
+
+# i3-gaps
 gaps inner 5
 
 bindsym $mod+z       gaps outer current plus 5
@@ -168,14 +173,14 @@ exec xset s off -dpms
 #==================================================================
 # Window rules rules
 #==================================================================
-assign [class="^Google-chrome.*$"] 3
+assign [class="^Google-chrome.*$"] 2
 	for_window [class="^Google-chrome.*$"] focus
 
-assign [class="^Chromium$"] 3
+assign [class="^Chromium$"] 2
 	for_window [class="^Chromium$"] focus
 
-assign [class="^Firefox$"] 3
-	for_window [class="^Firefox$"] focus
+assign [class="^firefox$"] 3
+	for_window [class="^firefox$"] focus
 
 assign [class="^Slack$"] 4
 	for_window [class="^Slack$"] focus
@@ -183,13 +188,16 @@ assign [class="^Slack$"] 4
 assign [class="^Postman$"] 5
 	for_window [class="^Postman$"] focus
 
-assign [class="^Spotify$"] 7
-	for_window [class="^Spotify$"] focus
+assign [class="spotify"] 7
+	for_window [class="spotify"] focus
 
 assign [class="^Thunderbird$"] 8
 	for_window [class="^Thunderbird$"] focus
 assign [class="^Transmission$"] 8
 	for_window [class="^Transmission$"] focus
+
+# spotify is a special case
+for_window [class="Spotify"] move to workspace 4
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
