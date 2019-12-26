@@ -32,7 +32,7 @@ end
 
 ## gcloud
 alias gcl="gcloud"
-function gcc
+function gclc
 	if test (count $argv) -eq 0
 		set -gx KUBECONFIG /home/$USER/.kube/config-personal
 		gcl config configurations activate rnd
