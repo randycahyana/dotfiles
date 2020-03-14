@@ -29,7 +29,10 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+" languages
 Plug 'fatih/vim-go'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
