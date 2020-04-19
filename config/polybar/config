@@ -93,17 +93,17 @@ label-urgent-padding = 2
 type = internal/cpu
 interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
-label = %percentage:2%%
+label = CPU: %percentage:2%%
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
-label = %percentage_used%%
+label = MEM %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp2s0
+interface = wlp82s0
 interval = 3.0
 
 format-connected = <label-connected>
@@ -115,7 +115,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = lo
+interface = enp0s31f6
 interval = 3.0
 
 format-connected-prefix = " "
@@ -146,10 +146,11 @@ label-muted-foreground = #666
 [module/battery]
 type = internal/battery
 battery = BAT0
-adapter = ADP0
+adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
 
 format-full-prefix-foreground = ${colors.foreground-alt}
 

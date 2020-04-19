@@ -49,7 +49,7 @@ autocmd BufNewFile,BufRead *.fish setlocal syntax=sh
 autocmd FileType html,xml,sh,javascript,typescript,json,yaml,sql,vim,fish setlocal tabstop=4 shiftwidth=4  softtabstop=4 noexpandtab
 
 " plugins settings
-let g:airline_theme='badcat'
+let g:airline_theme='bubblegum'
 let g:go_fmt_command = "goimports"
 let g:go_list_type = "quickfix"
 
