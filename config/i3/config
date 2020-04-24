@@ -197,7 +197,7 @@ assign [class="^Transmission$"] 8
 	for_window [class="^Transmission$"] focus
 
 # spotify is a special case
-for_window [class="Spotify"] move to workspace 4
+for_window [class="Spotify"] move to workspace 8
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
