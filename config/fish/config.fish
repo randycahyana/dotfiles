@@ -19,9 +19,12 @@ set -gx PATH /home/$USER/.yarn/bin $PATH
 alias d="kitty +kitten diff"
 alias dc="docker-compose"
 alias dot="cd $HOME/dotfiles"
+alias notes="cd $HOME/notes"
 alias t="tmux"
 
 ## kubectl
+set -gx KUBE_EDITOR vim
+
 alias kc="kubectl"
 function kcc
 	if test (count $argv) -eq 0
