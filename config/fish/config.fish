@@ -12,8 +12,6 @@ set -gx PATH $GOROOT/bin $PATH
 set -gx PATH $GOPATH/bin $PATH
 set -gx PATH /home/$USER/.local/bin $PATH
 set -gx PATH /home/$USER/google-cloud-sdk/bin $PATH
-set -gx PATH /home/$USER/istio-1.4.3/bin $PATH
-set -gx PATH /home/$USER/.yarn/bin $PATH
 
 # Aliases
 alias d="kitty +kitten diff"
