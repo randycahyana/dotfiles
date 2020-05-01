@@ -175,7 +175,6 @@ exec xset s off -dpms
 #==================================================================
 assign [class="^Google-chrome.*$"] 2
 	for_window [class="^Google-chrome.*$"] focus
-
 assign [class="^Chromium$"] 2
 	for_window [class="^Chromium$"] focus
 
@@ -184,6 +183,8 @@ assign [class="^firefox$"] 3
 
 assign [class="^Slack$"] 4
 	for_window [class="^Slack$"] focus
+assign [class="^TelegramDesktop$"] 4
+	for_window [class="^TelegramDesktop$"] focus
 
 assign [class="^Postman$"] 5
 	for_window [class="^Postman$"] focus
