@@ -29,29 +29,37 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'dense-analysis/ale'
 Plug 'fatih/vim-go'
+Plug 'bufbuild/vim-buf'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'jiangmiao/auto-pairs'
 
 " code formatter
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
 " override file settings
 autocmd BufNewFile,BufRead *.go.tpl,*.qtpl,*.gunk setlocal syntax=go
 autocmd BufNewFile,BufRead *.fish setlocal syntax=sh
-autocmd FileType html,xml,sh,javascript,typescript,json,yaml,sql,vim,fish setlocal tabstop=4 shiftwidth=4  softtabstop=4 noexpandtab
+autocmd FileType html,xml,sh,javascript,typescript,json,yaml,sql,vim,fish,proto setlocal tabstop=4 shiftwidth=4  softtabstop=4 noexpandtab
 
 " plugins settings
 let g:airline_theme='bubblegum'
 let g:go_fmt_command = "goimports"
 let g:go_list_type = "quickfix"
+
+let g:ale_linters = {
+\   'proto': ['buf-check-lint',],
+\}
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_linters_explicit = 1
 
 call glaive#Install()
 
