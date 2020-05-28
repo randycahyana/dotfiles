@@ -95,6 +95,7 @@ bindsym $mod+Shift+p exec flameshot full -p ~/Pictures
 #==================================================================
 # Start-up program
 #==================================================================
+exec --no-startup-id prime-offload
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id nm-applet
 exec_always --no-startup-id ~/.config/polybar/init.sh &
