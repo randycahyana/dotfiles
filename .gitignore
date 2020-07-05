@@ -4,3 +4,5 @@ ycm_build
 config/yarn/global/node_modules/
 config/yarn/global/bin/
 config/albert/core.db
+
+config/fish/usr/

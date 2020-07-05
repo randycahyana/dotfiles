@@ -47,3 +47,8 @@ end
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "/home/$USER/google-cloud-sdk/path.fish.inc" ]; . "/home/$USER/google-cloud-sdk/path.fish.inc"; end
+
+# Load user config files
+for f in /home/randy/dotfiles/config/fish/usr/*
+	source $f
+end
