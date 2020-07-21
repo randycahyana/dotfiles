@@ -38,6 +38,7 @@ alias gcl="gcloud"
 function gclc
 	if test (count $argv) -eq 0
 		set -gx KUBECONFIG /home/$USER/.kube/config
+		gcl config configurations activate local
 	else
 		set -gx KUBECONFIG /home/$USER/.kube/config-$argv
 		gcl config configurations activate $argv
