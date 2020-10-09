@@ -12,6 +12,9 @@
   d = diff
   r = reset
   rb = rebase
+  sw = switch
+  swb = switch -c
+  swt = switch -
   co = checkout
   cp = cherry-pick
   lg = log
