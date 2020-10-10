@@ -16,6 +16,7 @@
   swb = switch -c
   swt = switch -
   co = checkout
+  coa = commit --amend
   cp = cherry-pick
   lg = log
   ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
