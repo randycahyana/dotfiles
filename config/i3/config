@@ -12,7 +12,6 @@ set $down k
 set $left h
 set $right l
 
-
 #==================================================================
 # Layout
 #==================================================================
@@ -204,7 +203,6 @@ for_window [class="Spotify"] move to workspace 8
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
-for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Skype"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal

@@ -4,7 +4,7 @@ syntax off
 filetype plugin indent on
 
 set ruler smartindent
-set synmaxcol=240
+set synmaxcol=1000
 set wrap linebreak nolist nojoinspaces
 set nobackup noswapfile nowritebackup
 set noexpandtab tabstop=8 softtabstop=8 shiftwidth=8
@@ -48,7 +48,7 @@ call plug#end()
 " override file settings
 autocmd BufNewFile,BufRead *.go.tpl,*.qtpl,*.gunk setlocal syntax=go
 autocmd BufNewFile,BufRead *.fish setlocal syntax=sh
-autocmd FileType html,xml,sh,javascript,typescript,json,yaml,sql,vim,fish,proto setlocal tabstop=4 shiftwidth=4  softtabstop=4 noexpandtab
+autocmd FileType html,xml,sh,javascript,typescript,json,yaml,sql,vim,fish,proto setlocal tabstop=2 shiftwidth=2  softtabstop=2 expandtab
 
 " plugins settings
 let g:airline_theme='bubblegum'
