@@ -183,19 +183,17 @@ assign [class="^firefox$"] 3
 
 assign [class="^Slack$"] 4
 	for_window [class="^Slack$"] focus
-assign [class="^TelegramDesktop$"] 4
-	for_window [class="^TelegramDesktop$"] focus
 
 assign [class="^Postman$"] 5
 	for_window [class="^Postman$"] focus
 
+assign [class="Signal"] 6
+	for_window [class="Signal"] focus
+assign [class="^Telegram$"] 6
+	for_window [class="^Telegram$"] focus
+
 assign [class="spotify"] 7
 	for_window [class="spotify"] focus
-
-assign [class="^Thunderbird$"] 8
-	for_window [class="^Thunderbird$"] focus
-assign [class="^Transmission$"] 8
-	for_window [class="^Transmission$"] focus
 
 # spotify is a special case
 for_window [class="Spotify"] move to workspace 8
