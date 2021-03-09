@@ -30,11 +30,4 @@ for i in $(ls $SRC/X); do
   fi
 done
 
-# jira config
-for i in $(ls $SRC/jira.d); do
-  if [[ ! -f $i && ! -e $HOME/.$i ]]; then
-    ln -svf $SRC/jira.d/$i $HOME/.$i
-  fi
-done
-
 ln -svf $SRC/vimrc $HOME/.vimrc
