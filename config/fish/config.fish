@@ -3,10 +3,6 @@ set -gx GOROOT /home/$USER/go
 set -gx GOROOT_BOOTSTRAP /usr/local/go1.9.5
 set -gx GOPATH /home/$USER/workspace
 
-set -gx GOPRIVATE 'brank.as/*'
-set -gx GONOPROXY 'brank.as/*'
-set -gx GONOSUMDB 'brank.as/*'
-
 # PATH
 set -gx PATH $GOROOT/bin $PATH
 set -gx PATH $GOPATH/bin $PATH
@@ -20,6 +16,7 @@ alias dc="docker-compose"
 alias dot="cd $HOME/dotfiles"
 alias notes="cd $HOME/notes"
 alias t="tmux"
+alias tf="terraform"
 
 ## kubectl
 set -gx KUBE_EDITOR vim
