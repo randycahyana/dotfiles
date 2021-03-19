@@ -14,6 +14,13 @@ set incsearch ignorecase smartcase showmatch hlsearch
 set noerrorbells novisualbell
 set number
 
+" disable Background Color Erase (BCE) so that color schemes
+" render properly.
+"
+"
+" see https://sunaku.github.io/vim-256color-bce.html
+set t_ut=
+
 " key bindings
 noremap <C-@> <c-x><c-o>
 
@@ -26,7 +33,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'arcticicestudio/nord-vim'
+Plug 'doums/darcula'
 
 Plug 'govim/govim'
 Plug 'dense-analysis/ale'
@@ -40,8 +47,7 @@ Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
-colorscheme nord
-set termguicolors
+colorscheme darcula
 
 " override file settings
 autocmd BufNewFile,BufRead *.go.tpl,*.qtpl,*.gunk setlocal syntax=go
