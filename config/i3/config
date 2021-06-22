@@ -192,7 +192,10 @@ assign [class="Signal"] 6
 assign [class="^Telegram$"] 6
 	for_window [class="^Telegram$"] focus
 
-assign [class="spotify"] 7
+assign [class="(?i)virtualbox"] 7
+	for_window [class="(?i)virtualbox"] focus border normal
+
+assign [class="spotify"] 8
 	for_window [class="spotify"] focus
 
 # spotify is a special case
@@ -203,7 +206,6 @@ for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Skype"] floating enable border normal
-for_window [class="(?i)virtualbox"] floating enable border normal
 
 #==================================================================
 # themes
