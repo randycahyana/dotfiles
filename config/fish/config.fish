@@ -29,6 +29,8 @@ function kcc
 	end
 end
 
+alias ktop="kubectl top pod -A | sort --reverse --key 3 --numeric | head -5"
+
 ## gcloud
 alias gcl="gcloud"
 function gclc
