@@ -17,7 +17,7 @@ alias dot="cd $HOME/dotfiles"
 alias tf="terraform"
 
 # Kitty completion
-kitty + complete setup fish
+kitty + complete setup fish | source
 
 ## kubectl
 set -gx KUBE_EDITOR vim
