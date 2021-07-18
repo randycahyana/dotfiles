@@ -14,8 +14,10 @@ set -gx PATH /home/$USER/.yarn/bin $PATH
 alias d="kitty +kitten diff"
 alias dc="docker-compose"
 alias dot="cd $HOME/dotfiles"
-alias t="tmux"
 alias tf="terraform"
+
+# Kitty completion
+kitty + complete setup fish
 
 ## kubectl
 set -gx KUBE_EDITOR vim
